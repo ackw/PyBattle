@@ -8,19 +8,22 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
-    path: Assets/Scenes/test/Scene1.unity
-    guid: c5d176a31c2c4412591ec856ffd82f00
-  - enabled: 1
-    path: Assets/Scenes/test/Scene2.unity
+  - enabled: 0
+    path: Assets/Scenes/test/Home.unity
     guid: c69ae9a696e5b42c1bef349e4bf653b0
   - enabled: 1
-    path: Assets/Scenes/test/Scene3.unity
+    path: Assets/Scenes/test/Login.unity
+    guid: c5d176a31c2c4412591ec856ffd82f00
+  - enabled: 1
+    path: Assets/Scenes/test/SelectMode.unity
+    guid: d78ce91baabd2431693ec7c4aa755eee
+  - enabled: 1
+    path: Assets/Scenes/test/PVP.unity
     guid: 709304c8c0da64853b50cee849acab90
   - enabled: 1
     path: Assets/Scenes/test/Game.unity
     guid: 2d234131a42b5458a9220f8e41ba9232
   - enabled: 1
-    path: Assets/Scenes/test/Mode Selection.unity
-    guid: d78ce91baabd2431693ec7c4aa755eee
+    path: Assets/Scenes/test/Question.unity
+    guid: 407a578571adc489f9aae9887c97b363
   m_configObjects: {}
