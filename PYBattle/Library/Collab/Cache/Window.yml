@@ -1,0 +1,926 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffe70aba2e7074048aca5de573b64a59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SimpleSelectedItems:
+    m_Keys:
+    - Assets/Creator Kit - RPG.meta
+    - Assets/Creator Kit - RPG/Art.meta
+    - Assets/Creator Kit - RPG/Art/Animations.meta
+    - Assets/Creator Kit - RPG/Art/Animations/Characters.meta
+    - Assets/Creator Kit - RPG/Art/Animations/Characters/Archer.meta
+    - Assets/Creator Kit - RPG/Art/Animations/Characters/Archer/Archer-Idle.anim
+    - Assets/Creator Kit - RPG/Art/Animations/Characters/Archer/Archer-Idle.anim.meta
+    - Assets/Creator Kit - RPG/Art/Animations/Characters/Archer/Archer-Talk.anim
+    - Assets/Creator Kit - RPG/Art/Animations/Characters/Archer/Archer-Talk.anim.meta
+    - Assets/Creator Kit - RPG/Art/Animations/Characters/Archer/Archer-Walk-N.anim
+    - Assets/Creator Kit - RPG/Art/Animations/Characters/Archer/Archer-Walk-N.anim.meta
+    - Assets/Creator Kit - RPG/Art/Animations/Characters/Archer/Archer-Walk-S.anim
+    - Assets/Creator Kit - RPG/Art/Animations/Characters/Archer/Archer-Walk-S.anim.meta
+    - Assets/Creator Kit - RPG/Art/Animations/Characters/Archer/Archer-Walk-W.anim
+    - Assets/Creator Kit - RPG/Art/Animations/Characters/Archer/Archer-Walk-W.anim.meta
+    - Assets/Creator Kit - RPG/Art/Animations/Characters/Base.meta
+    - Assets/Creator Kit - RPG/Art/Animations/Characters/Base/Player-Idle.anim
+    - Assets/Creator Kit - RPG/Art/Animations/Characters/Base/Player-Idle.anim.meta
+    - Assets/Creator Kit - RPG/Art/Animations/Characters/Base/Player-Talk.anim
+    - Assets/Creator Kit - RPG/Art/Animations/Characters/Base/Player-Talk.anim.meta
+    - Assets/Creator Kit - RPG/Art/Animations/Characters/Base/Player-Walk-E.anim
+    - Assets/Creator Kit - RPG/Art/Animations/Characters/Base/Player-Walk-E.anim.meta
+    - Assets/Creator Kit - RPG/Art/Animations/Characters/Base/Player-Walk-N.anim
+    - Assets/Creator Kit - RPG/Art/Animations/Characters/Base/Player-Walk-N.anim.meta
+    - Assets/Creator Kit - RPG/Art/Animations/Characters/Base/Player-Walk-S.anim
+    - Assets/Creator Kit - RPG/Art/Animations/Characters/Base/Player-Walk-S.anim.meta
+    - Assets/Creator Kit - RPG/Art/Animations/Characters/Base/Player-Walk-W.anim
+    - Assets/Creator Kit - RPG/Art/Animations/Characters/Base/Player-Walk-W.anim.meta
+    - Assets/Creator Kit - RPG/Art/Animations/Characters/NPC.meta
+    - Assets/Creator Kit - RPG/Art/Animations/Characters/NPC/Chicken-Idle.anim
+    - Assets/Creator Kit - RPG/Art/Animations/Characters/NPC/Chicken-Idle.anim.meta
+    - Assets/Creator Kit - RPG/Art/Animations/Characters/NPC/Grandma-Idle.anim
+    - Assets/Creator Kit - RPG/Art/Animations/Characters/NPC/Grandma-Idle.anim.meta
+    - Assets/Creator Kit - RPG/Art/Animations/Characters/NPC/Grandpa-Idle.anim
+    - Assets/Creator Kit - RPG/Art/Animations/Characters/NPC/Grandpa-Idle.anim.meta
+    - Assets/Creator Kit - RPG/Art/Animations/Characters/Thief.meta
+    - Assets/Creator Kit - RPG/Art/Animations/Characters/Thief/Thief-Idle.anim
+    - Assets/Creator Kit - RPG/Art/Animations/Characters/Thief/Thief-Idle.anim.meta
+    - Assets/Creator Kit - RPG/Art/Animations/Characters/Thief/Thief-Talk.anim
+    - Assets/Creator Kit - RPG/Art/Animations/Characters/Thief/Thief-Talk.anim.meta
+    - Assets/Creator Kit - RPG/Art/Animations/Characters/Thief/Thief-Walk-N.anim
+    - Assets/Creator Kit - RPG/Art/Animations/Characters/Thief/Thief-Walk-N.anim.meta
+    - Assets/Creator Kit - RPG/Art/Animations/Characters/Thief/Thief-Walk-S.anim
+    - Assets/Creator Kit - RPG/Art/Animations/Characters/Thief/Thief-Walk-S.anim.meta
+    - Assets/Creator Kit - RPG/Art/Animations/Characters/Thief/Thief-Walk-W.anim
+    - Assets/Creator Kit - RPG/Art/Animations/Characters/Thief/Thief-Walk-W.anim.meta
+    - Assets/Creator Kit - RPG/Art/Animations/Characters/Warrior.meta
+    - Assets/Creator Kit - RPG/Art/Animations/Characters/Warrior/Warrior-Idle.anim
+    - Assets/Creator Kit - RPG/Art/Animations/Characters/Warrior/Warrior-Idle.anim.meta
+    - Assets/Creator Kit - RPG/Art/Animations/Characters/Warrior/Warrior-Talk.anim
+    - Assets/Creator Kit - RPG/Art/Animations/Characters/Warrior/Warrior-Talk.anim.meta
+    - Assets/Creator Kit - RPG/Art/Animations/Characters/Warrior/Warrior-Walk-N.anim
+    - Assets/Creator Kit - RPG/Art/Animations/Characters/Warrior/Warrior-Walk-N.anim.meta
+    - Assets/Creator Kit - RPG/Art/Animations/Characters/Warrior/Warrior-Walk-S.anim
+    - Assets/Creator Kit - RPG/Art/Animations/Characters/Warrior/Warrior-Walk-S.anim.meta
+    - Assets/Creator Kit - RPG/Art/Animations/Characters/Warrior/Warrior-Walk-W.anim
+    - Assets/Creator Kit - RPG/Art/Animations/Characters/Warrior/Warrior-Walk-W.anim.meta
+    - Assets/Creator Kit - RPG/Art/Animations/Environment.meta
+    - Assets/Creator Kit - RPG/Art/Animations/Environment/AnimatedSmoke.anim
+    - Assets/Creator Kit - RPG/Art/Animations/Environment/AnimatedSmoke.anim.meta
+    - Assets/Creator Kit - RPG/Art/Animators.meta
+    - Assets/Creator Kit - RPG/Art/Animators/Archer-Override.overrideController
+    - Assets/Creator Kit - RPG/Art/Animators/Archer-Override.overrideController.meta
+    - Assets/Creator Kit - RPG/Art/Animators/Character.controller
+    - Assets/Creator Kit - RPG/Art/Animators/Character.controller.meta
+    - Assets/Creator Kit - RPG/Art/Animators/Chicken.controller
+    - Assets/Creator Kit - RPG/Art/Animators/Chicken.controller.meta
+    - Assets/Creator Kit - RPG/Art/Animators/Leaves.controller
+    - Assets/Creator Kit - RPG/Art/Animators/Leaves.controller.meta
+    - Assets/Creator Kit - RPG/Art/Animators/Smoke.controller
+    - Assets/Creator Kit - RPG/Art/Animators/Smoke.controller.meta
+    - Assets/Creator Kit - RPG/Art/Animators/Thief-Override.overrideController
+    - Assets/Creator Kit - RPG/Art/Animators/Thief-Override.overrideController.meta
+    - Assets/Creator Kit - RPG/Art/Animators/Villager01.controller
+    - Assets/Creator Kit - RPG/Art/Animators/Villager01.controller.meta
+    - Assets/Creator Kit - RPG/Art/Animators/Villager02.controller
+    - Assets/Creator Kit - RPG/Art/Animators/Villager02.controller.meta
+    - Assets/Creator Kit - RPG/Art/Animators/Warrior-Override.overrideController
+    - Assets/Creator Kit - RPG/Art/Animators/Warrior-Override.overrideController.meta
+    - Assets/Creator Kit - RPG/Art/Sprites.meta
+    - Assets/Creator Kit - RPG/Art/Sprites/Animated Environment.meta
+    - Assets/Creator Kit - RPG/Art/Sprites/Animated Environment/Animated_HighGrass_Sheet.png.meta
+    - Assets/Creator Kit - RPG/Art/Sprites/Animated Environment/Animated_Leaves_Sheet.png.meta
+    - Assets/Creator Kit - RPG/Art/Sprites/Animated Environment/Animated_Smoke_Sheet.png.meta
+    - Assets/Creator Kit - RPG/Art/Sprites/Animated Environment/Animated_Tree1_Sheet.png.meta
+    - Assets/Creator Kit - RPG/Art/Sprites/Animated Environment/Animated_Tree2_Sheet.png.meta
+    - Assets/Creator Kit - RPG/Art/Sprites/Animated Environment/Animated_Tree3_Sheet.png.meta
+    - Assets/Creator Kit - RPG/Art/Sprites/Animated Environment/Animated_WaterCorners_Sheet.png.meta
+    - Assets/Creator Kit - RPG/Art/Sprites/Animated Environment/Animated_Water_Sheet.png.meta
+    - Assets/Creator Kit - RPG/Art/Sprites/Animated Environment/Materials.meta
+    - Assets/Creator Kit - RPG/Art/Sprites/Animated Environment/Materials/animated
+      tree.mat
+    - Assets/Creator Kit - RPG/Art/Sprites/Animated Environment/Materials/animated
+      tree.mat.meta
+    - Assets/Creator Kit - RPG/Art/Sprites/Animated Environment/Materials/water.mat
+    - Assets/Creator Kit - RPG/Art/Sprites/Animated Environment/Materials/water.mat.meta
+    - Assets/Creator Kit - RPG/Art/Sprites/Characters.meta
+    - Assets/Creator Kit - RPG/Art/Sprites/Characters/Characters01_AnimationSheet.png.meta
+    - Assets/Creator Kit - RPG/Art/Sprites/Characters/Characters02_AnimationSheet.png
+    - Assets/Creator Kit - RPG/Art/Sprites/Characters/Characters02_AnimationSheet.png.meta
+    - Assets/Creator Kit - RPG/Art/Sprites/Environment.meta
+    - Assets/Creator Kit - RPG/Art/Sprites/Environment/Cloud1.png.meta
+    - Assets/Creator Kit - RPG/Art/Sprites/Environment/Cloud2.png.meta
+    - Assets/Creator Kit - RPG/Art/Sprites/Environment/Cloud3.png.meta
+    - Assets/Creator Kit - RPG/Art/Sprites/Environment/Fence.png.meta
+    - Assets/Creator Kit - RPG/Art/Sprites/Environment/House.png.meta
+    - Assets/Creator Kit - RPG/Art/Sprites/Environment/HouseChimney.png.meta
+    - Assets/Creator Kit - RPG/Art/Sprites/Environment/HouseRoof.png.meta
+    - Assets/Creator Kit - RPG/Art/Sprites/Environment/Items.png.meta
+    - Assets/Creator Kit - RPG/Art/Sprites/Environment/Materials.meta
+    - Assets/Creator Kit - RPG/Art/Sprites/Environment/Materials/Cloud.mat
+    - Assets/Creator Kit - RPG/Art/Sprites/Environment/Materials/Cloud.mat.meta
+    - Assets/Creator Kit - RPG/Art/Sprites/Environment/Materials/Cloud2.mat
+    - Assets/Creator Kit - RPG/Art/Sprites/Environment/Materials/Cloud2.mat.meta
+    - Assets/Creator Kit - RPG/Art/Sprites/Environment/Materials/House.mat
+    - Assets/Creator Kit - RPG/Art/Sprites/Environment/Materials/House.mat.meta
+    - Assets/Creator Kit - RPG/Art/Sprites/Environment/Materials/HouseRoof.mat
+    - Assets/Creator Kit - RPG/Art/Sprites/Environment/Materials/HouseRoof.mat.meta
+    - Assets/Creator Kit - RPG/Art/Sprites/Environment/Pipeline_StoneWalkpath.png.meta
+    - Assets/Creator Kit - RPG/Art/Sprites/Environment/Pipeline_Walkpath.png.meta
+    - Assets/Creator Kit - RPG/Art/Sprites/Environment/RockCliff.png.meta
+    - Assets/Creator Kit - RPG/Art/Sprites/Environment/static environment objects.png.meta
+    - Assets/Creator Kit - RPG/Art/Sprites/Floors.meta
+    - Assets/Creator Kit - RPG/Art/Sprites/Floors/Tiles_DarkGrasstoGrass.png.meta
+    - Assets/Creator Kit - RPG/Art/Sprites/Floors/Tiles_Desert.png.meta
+    - Assets/Creator Kit - RPG/Art/Sprites/Floors/Tiles_DesertToGrass.png.meta
+    - Assets/Creator Kit - RPG/Art/Sprites/Floors/Tiles_Grass.png.meta
+    - Assets/Creator Kit - RPG/Art/Sprites/Floors/Tiles_GrassToDesert.png.meta
+    - Assets/Creator Kit - RPG/Art/Sprites/Floors/Tiles_GrassVariant.png.meta
+    - Assets/Creator Kit - RPG/Art/Sprites/UI.meta
+    - Assets/Creator Kit - RPG/Art/Sprites/UI/DialogueBar.psd.meta
+    - Assets/Creator Kit - RPG/Art/Sprites/UI/Materials.meta
+    - Assets/Creator Kit - RPG/Art/Sprites/UI/Materials/DialogueBar.mat
+    - Assets/Creator Kit - RPG/Art/Sprites/UI/Materials/DialogueBar.mat.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Line Brush.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Line Brush.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/HighGrassAnimated.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/HighGrassAnimated/HighGrass_Low.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/HighGrassAnimated/HighGrass_Low.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/HighGrassAnimated/HighGrass_LowLeft.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/HighGrassAnimated/HighGrass_LowLeft.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/HighGrassAnimated/HighGrass_LowRight.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/HighGrassAnimated/HighGrass_LowRight.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/HighGrassAnimated/HighGrass_Mid.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/HighGrassAnimated/HighGrass_Mid.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/HighGrassAnimated/HighGrass_MidLeft.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/HighGrassAnimated/HighGrass_MidLeft.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/HighGrassAnimated/HighGrass_MidRight.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/HighGrassAnimated/HighGrass_MidRight.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/HighGrassAnimated/HighGrass_Top.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/HighGrassAnimated/HighGrass_Top.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/HighGrassAnimated/HighGrass_TopLeft.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/HighGrassAnimated/HighGrass_TopLeft.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/HighGrassAnimated/HighGrass_TopRight.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/HighGrassAnimated/HighGrass_TopRight.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/Pipeline Tile.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/Pipeline Tile/Tiles_Fence_Pipeline.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/Pipeline Tile/Tiles_Fence_Pipeline.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/Pipeline Tile/Tiles_WalkPath_Pipeline.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/Pipeline Tile/Tiles_WalkPath_Pipeline.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/Pipeline Tile/Tiles_stoneWalkPath_Animated.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/Pipeline Tile/Tiles_stoneWalkPath_Animated.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_GrassDark_0.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_GrassDark_0.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_GrassDark_1.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_GrassDark_1.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_GrassDark_2.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_GrassDark_2.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_GrassDark_3.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_GrassDark_3.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_GrassDark_4.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_GrassDark_4.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_GrassDark_5.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_GrassDark_5.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_GrassDark_6.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_GrassDark_6.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_GrassDark_7.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_GrassDark_7.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_GrassDark_8.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_GrassDark_8.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_GrassToDesert_0.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_GrassToDesert_0.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_GrassToDesert_1.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_GrassToDesert_1.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_GrassToDesert_2.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_GrassToDesert_2.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_GrassToDesert_3.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_GrassToDesert_3.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_GrassToDesert_4.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_GrassToDesert_4.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_GrassToDesert_5.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_GrassToDesert_5.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_GrassToDesert_6.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_GrassToDesert_6.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_GrassToDesert_7.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_GrassToDesert_7.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_GrassToDesert_8.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_GrassToDesert_8.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_GrassVariant_4.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_GrassVariant_4.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_GrassVariant_5.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_GrassVariant_5.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_GrassVariant_7.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_GrassVariant_7.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_GrassVariant_8.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_GrassVariant_8.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_Grass_0.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_Grass_0.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_Grass_1.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_Grass_1.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_Grass_2.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_Grass_2.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_Grass_3.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_Grass_3.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_Grass_4.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_Grass_4.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_Grass_5.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_Grass_5.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_Grass_6.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_Grass_6.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_Grass_7.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_Grass_7.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_Grass_8.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesGrass/Tiles_Grass_8.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_0.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_0.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_1.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_1.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_10.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_10.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_11.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_11.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_12.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_12.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_13.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_13.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_14.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_14.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_15.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_15.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_16.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_16.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_17.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_17.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_18.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_18.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_19.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_19.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_2.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_2.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_20.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_20.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_21.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_21.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_22.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_22.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_23.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_23.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_24.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_24.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_25.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_25.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_26.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_26.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_27.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_27.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_28.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_28.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_29.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_29.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_3.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_3.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_30.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_30.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_31.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_31.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_4.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_4.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_5.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_5.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_6.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_6.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_7.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_7.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_8.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_8.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_9.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesHouse/House_9.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesRockCliff.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesRockCliff/RockCliff_0.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesRockCliff/RockCliff_0.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesRockCliff/RockCliff_1.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesRockCliff/RockCliff_1.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesRockCliff/RockCliff_2.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesRockCliff/RockCliff_2.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesRockCliff/RockCliff_3.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesRockCliff/RockCliff_3.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesRockCliff/RockCliff_4.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/TilesRockCliff/RockCliff_4.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/WaterAnimated.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/WaterAnimated/Water_Bottom.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/WaterAnimated/Water_Bottom.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/WaterAnimated/Water_BottomLeft.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/WaterAnimated/Water_BottomLeft.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/WaterAnimated/Water_BottomRight.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/WaterAnimated/Water_BottomRight.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/WaterAnimated/Water_Mid.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/WaterAnimated/Water_Mid.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/WaterAnimated/Water_MidLeft.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/WaterAnimated/Water_MidLeft.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/WaterAnimated/Water_MidRight.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/WaterAnimated/Water_MidRight.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/WaterAnimated/Water_Top.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/WaterAnimated/Water_Top.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/WaterAnimated/Water_TopLeft.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/WaterAnimated/Water_TopLeft.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/WaterAnimated/Water_TopRight.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/WaterAnimated/Water_TopRight.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/WaterCornersAnimated.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/WaterCornersAnimated/WaterCorner_BottomLeft.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/WaterCornersAnimated/WaterCorner_BottomLeft.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/WaterCornersAnimated/WaterCorner_BottomRight.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/WaterCornersAnimated/WaterCorner_BottomRight.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/WaterCornersAnimated/WaterCorner_TopLeft.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/WaterCornersAnimated/WaterCorner_TopLeft.asset.meta
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/WaterCornersAnimated/WaterCorner_TopRight.asset
+    - Assets/Creator Kit - RPG/Art/TileMapPalettes/Tileset/WaterCornersAnimated/WaterCorner_TopRight.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/House_9.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/House_9.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles.prefab
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles.prefab.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_DesertIntersections_0.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_DesertIntersections_0.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_DesertIntersections_1.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_DesertIntersections_1.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_DesertIntersections_2.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_DesertIntersections_2.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_DesertIntersections_3.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_DesertIntersections_3.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_DesertIntersections_4.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_DesertIntersections_4.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_DesertIntersections_5.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_DesertIntersections_5.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_DesertIntersections_6.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_DesertIntersections_6.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_DesertIntersections_7.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_DesertIntersections_7.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_DesertIntersections_8.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_DesertIntersections_8.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_DesertToGrass_0.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_DesertToGrass_0.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_DesertToGrass_1.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_DesertToGrass_1.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_DesertToGrass_2.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_DesertToGrass_2.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_DesertToGrass_3.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_DesertToGrass_3.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_DesertToGrass_4.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_DesertToGrass_4.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_DesertToGrass_5.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_DesertToGrass_5.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_DesertToGrass_6.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_DesertToGrass_6.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_DesertToGrass_7.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_DesertToGrass_7.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_DesertToGrass_8.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_DesertToGrass_8.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_Desert_0.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_Desert_0.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_Desert_1.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_Desert_1.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_Desert_2.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_Desert_2.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_Desert_3.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_Desert_3.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_Desert_4.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_Desert_4.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_Desert_5.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_Desert_5.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_Desert_6.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_Desert_6.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_Desert_7.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_Desert_7.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_Desert_8.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_Desert_8.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_GrassIntersections_0.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_GrassIntersections_0.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_GrassIntersections_1.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_GrassIntersections_1.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_GrassIntersections_2.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_GrassIntersections_2.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_GrassIntersections_3.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_GrassIntersections_3.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_GrassIntersections_4.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_GrassIntersections_4.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_GrassIntersections_5.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_GrassIntersections_5.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_GrassIntersections_6.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_GrassIntersections_6.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_GrassIntersections_7.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_GrassIntersections_7.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_GrassIntersections_8.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_GrassIntersections_8.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_GrassToDesert_0.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_GrassToDesert_0.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_GrassToDesert_1.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_GrassToDesert_1.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_GrassToDesert_2.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_GrassToDesert_2.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_GrassToDesert_3.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_GrassToDesert_3.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_GrassToDesert_4.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_GrassToDesert_4.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_GrassToDesert_5.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_GrassToDesert_5.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_GrassToDesert_6.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_GrassToDesert_6.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_GrassToDesert_7.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_GrassToDesert_7.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_GrassToDesert_8.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_GrassToDesert_8.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_Grass_0.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_Grass_0.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_Grass_1.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_Grass_1.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_Grass_2.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_Grass_2.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_Grass_3.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_Grass_3.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_Grass_4.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_Grass_4.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_Grass_5.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_Grass_5.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_Grass_6.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_Grass_6.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_Grass_7.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_Grass_7.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_Grass_8.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/Tiles_Grass_8.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_0.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_0.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_1.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_1.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_10.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_10.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_11.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_11.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_12.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_12.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_13.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_13.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_14.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_14.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_15.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_15.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_16.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_16.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_17.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_17.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_18.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_18.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_19.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_19.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_2.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_2.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_20.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_20.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_21.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_21.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_22.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_22.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_23.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_23.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_24.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_24.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_25.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_25.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_26.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_26.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_27.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_27.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_3.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_3.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_4.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_4.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_5.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_5.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_6.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_6.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_7.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_7.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_8.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_8.asset.meta
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_9.asset
+    - Assets/Creator Kit - RPG/Art/Tiles/treesv6_0_9.asset.meta
+    - Assets/Creator Kit - RPG/Audio.meta
+    - Assets/Creator Kit - RPG/Audio/AudioMixer.mixer
+    - Assets/Creator Kit - RPG/Audio/AudioMixer.mixer.meta
+    - Assets/Creator Kit - RPG/Audio/BGM_Item.ogg.meta
+    - Assets/Creator Kit - RPG/Audio/BGM_PixelRPG.ogg.meta
+    - Assets/Creator Kit - RPG/Audio/BGM_QuestComplete.ogg.meta
+    - Assets/Creator Kit - RPG/Audio/SFX_GrassFootstep01.ogg.meta
+    - Assets/Creator Kit - RPG/Audio/SFX_GrassFootstep02.ogg.meta
+    - Assets/Creator Kit - RPG/Audio/SFX_GrassFootstep03.ogg.meta
+    - Assets/Creator Kit - RPG/Audio/SFX_InsideFootstep01.ogg.meta
+    - Assets/Creator Kit - RPG/Audio/SFX_InsideFootstep02.ogg.meta
+    - Assets/Creator Kit - RPG/Audio/SFX_InsideFootstep03.ogg.meta
+    - Assets/Creator Kit - RPG/Audio/SFX_SandFootstep01.ogg.meta
+    - Assets/Creator Kit - RPG/Audio/SFX_SandFootstep02.ogg.meta
+    - Assets/Creator Kit - RPG/Audio/SFX_SandFootstep03.ogg.meta
+    - Assets/Creator Kit - RPG/Audio/SFX_UIConfirm.ogg.meta
+    - Assets/Creator Kit - RPG/Audio/SFX_UINavigate.ogg.meta
+    - Assets/Creator Kit - RPG/Audio/SFX_UINegative.ogg.meta
+    - Assets/Creator Kit - RPG/Audio/SFX_Voice01_01.ogg.meta
+    - Assets/Creator Kit - RPG/Audio/SFX_Voice01_02.ogg.meta
+    - Assets/Creator Kit - RPG/Audio/SFX_Voice01_03.ogg.meta
+    - Assets/Creator Kit - RPG/Audio/SFX_Voice01_04.ogg.meta
+    - Assets/Creator Kit - RPG/Audio/SFX_Voice01_05.ogg.meta
+    - Assets/Creator Kit - RPG/Audio/SFX_Voice01_06.ogg.meta
+    - Assets/Creator Kit - RPG/Audio/SFX_Voice01_07.ogg.meta
+    - Assets/Creator Kit - RPG/Audio/SFX_Voice01_08.ogg.meta
+    - Assets/Creator Kit - RPG/Audio/show-1.ogg.meta
+    - Assets/Creator Kit - RPG/Cutscene.meta
+    - Assets/Creator Kit - RPG/Cutscene/Editor.meta
+    - Assets/Creator Kit - RPG/Cutscene/Editor/CutsceneEditor.cs
+    - Assets/Creator Kit - RPG/Cutscene/Editor/CutsceneEditor.cs.meta
+    - Assets/Creator Kit - RPG/Cutscene/Editor/CutsceneEventDrawer.cs
+    - Assets/Creator Kit - RPG/Cutscene/Editor/CutsceneEventDrawer.cs.meta
+    - Assets/Creator Kit - RPG/Cutscene/Prefabs.meta
+    - Assets/Creator Kit - RPG/Cutscene/Prefabs/Cutscene.prefab
+    - Assets/Creator Kit - RPG/Cutscene/Prefabs/Cutscene.prefab.meta
+    - Assets/Creator Kit - RPG/Cutscene/Runtime.meta
+    - Assets/Creator Kit - RPG/Cutscene/Runtime/Cutscene.cs
+    - Assets/Creator Kit - RPG/Cutscene/Runtime/Cutscene.cs.meta
+    - Assets/Creator Kit - RPG/Cutscene/Textures.meta
+    - Assets/Creator Kit - RPG/Cutscene/Textures/fireramp.png.meta
+    - Assets/Creator Kit - RPG/Cutscene/Transitions.meta
+    - Assets/Creator Kit - RPG/Editor.meta
+    - Assets/Creator Kit - RPG/Editor/ConversationPieceDialog.cs
+    - Assets/Creator Kit - RPG/Editor/ConversationPieceDialog.cs.meta
+    - Assets/Creator Kit - RPG/Editor/ConversationPieceDrawer.cs
+    - Assets/Creator Kit - RPG/Editor/ConversationPieceDrawer.cs.meta
+    - Assets/Creator Kit - RPG/Editor/ConversationScriptEditor.cs
+    - Assets/Creator Kit - RPG/Editor/ConversationScriptEditor.cs.meta
+    - Assets/Creator Kit - RPG/Editor/InventoryItemSearchDialog.cs
+    - Assets/Creator Kit - RPG/Editor/InventoryItemSearchDialog.cs.meta
+    - Assets/Creator Kit - RPG/Editor/MechanicsGizmos.cs
+    - Assets/Creator Kit - RPG/Editor/MechanicsGizmos.cs.meta
+    - Assets/Creator Kit - RPG/Editor/SceneContext.cs
+    - Assets/Creator Kit - RPG/Editor/SceneContext.cs.meta
+    - Assets/Creator Kit - RPG/Editor/StoryItemEditor.cs
+    - Assets/Creator Kit - RPG/Editor/StoryItemEditor.cs.meta
+    - Assets/Creator Kit - RPG/Editor/StoryItemSearchDialog.cs
+    - Assets/Creator Kit - RPG/Editor/StoryItemSearchDialog.cs.meta
+    - Assets/Creator Kit - RPG/Gameplay Prefabs.meta
+    - Assets/Creator Kit - RPG/Gameplay Prefabs/Decorations.meta
+    - Assets/Creator Kit - RPG/Gameplay Prefabs/Decorations/Bush 0.prefab
+    - Assets/Creator Kit - RPG/Gameplay Prefabs/Decorations/Bush 0.prefab.meta
+    - Assets/Creator Kit - RPG/Gameplay Prefabs/Decorations/Bush 1.prefab
+    - Assets/Creator Kit - RPG/Gameplay Prefabs/Decorations/Bush 1.prefab.meta
+    - Assets/Creator Kit - RPG/Gameplay Prefabs/Decorations/Bush 2.prefab
+    - Assets/Creator Kit - RPG/Gameplay Prefabs/Decorations/Bush 2.prefab.meta
+    - Assets/Creator Kit - RPG/Gameplay Prefabs/Decorations/Bush 3.prefab
+    - Assets/Creator Kit - RPG/Gameplay Prefabs/Decorations/Bush 3.prefab.meta
+    - Assets/Creator Kit - RPG/Gameplay Prefabs/Decorations/Bush 4.prefab
+    - Assets/Creator Kit - RPG/Gameplay Prefabs/Decorations/Bush 4.prefab.meta
+    - Assets/Creator Kit - RPG/Gameplay Prefabs/Environment.meta
+    - Assets/Creator Kit - RPG/Gameplay Prefabs/Environment/Animated Tree1.prefab
+    - Assets/Creator Kit - RPG/Gameplay Prefabs/Environment/Animated Tree1.prefab.meta
+    - Assets/Creator Kit - RPG/Gameplay Prefabs/Environment/Animated Tree2.prefab
+    - Assets/Creator Kit - RPG/Gameplay Prefabs/Environment/Animated Tree2.prefab.meta
+    - Assets/Creator Kit - RPG/Gameplay Prefabs/Environment/Animated Tree3.prefab
+    - Assets/Creator Kit - RPG/Gameplay Prefabs/Environment/Animated Tree3.prefab.meta
+    - Assets/Creator Kit - RPG/Gameplay Prefabs/Environment/Leaves.prefab
+    - Assets/Creator Kit - RPG/Gameplay Prefabs/Environment/Leaves.prefab.meta
+    - Assets/Creator Kit - RPG/Gameplay Prefabs/InventoryItem.prefab
+    - Assets/Creator Kit - RPG/Gameplay Prefabs/InventoryItem.prefab.meta
+    - Assets/Creator Kit - RPG/Gameplay Prefabs/NPC.prefab
+    - Assets/Creator Kit - RPG/Gameplay Prefabs/NPC.prefab.meta
+    - Assets/Creator Kit - RPG/Gameplay Prefabs/StoryItem.prefab
+    - Assets/Creator Kit - RPG/Gameplay Prefabs/StoryItem.prefab.meta
+    - Assets/Creator Kit - RPG/Materials.meta
+    - Assets/Creator Kit - RPG/Materials/Cutscene.mat
+    - Assets/Creator Kit - RPG/Materials/Cutscene.mat.meta
+    - Assets/Creator Kit - RPG/Materials/Sprites.mat
+    - Assets/Creator Kit - RPG/Materials/Sprites.mat.meta
+    - Assets/Creator Kit - RPG/Prefabs.meta
+    - Assets/Creator Kit - RPG/Prefabs/Character.prefab
+    - Assets/Creator Kit - RPG/Prefabs/Character.prefab.meta
+    - Assets/Creator Kit - RPG/Prefabs/Controllers.prefab
+    - Assets/Creator Kit - RPG/Prefabs/Controllers.prefab.meta
+    - Assets/Creator Kit - RPG/Prefabs/DialogController.prefab.meta
+    - Assets/Creator Kit - RPG/Prefabs/Grid.prefab
+    - Assets/Creator Kit - RPG/Prefabs/Grid.prefab.meta
+    - Assets/Creator Kit - RPG/Prefabs/HouseChimney.prefab
+    - Assets/Creator Kit - RPG/Prefabs/HouseChimney.prefab.meta
+    - Assets/Creator Kit - RPG/Prefabs/HouseOpenDoor.prefab
+    - Assets/Creator Kit - RPG/Prefabs/HouseOpenDoor.prefab.meta
+    - Assets/Creator Kit - RPG/Prefabs/HouseRoof.prefab
+    - Assets/Creator Kit - RPG/Prefabs/HouseRoof.prefab.meta
+    - Assets/Creator Kit - RPG/Prefabs/Inventory.prefab
+    - Assets/Creator Kit - RPG/Prefabs/Inventory.prefab.meta
+    - Assets/Creator Kit - RPG/Prefabs/InventoryDialog.prefab
+    - Assets/Creator Kit - RPG/Prefabs/InventoryDialog.prefab.meta
+    - Assets/Creator Kit - RPG/Prefabs/Main Camera.prefab
+    - Assets/Creator Kit - RPG/Prefabs/Main Camera.prefab.meta
+    - Assets/Creator Kit - RPG/Prefabs/MessageBar.prefab
+    - Assets/Creator Kit - RPG/Prefabs/MessageBar.prefab.meta
+    - Assets/Creator Kit - RPG/Prefabs/Tilemaps.prefab
+    - Assets/Creator Kit - RPG/Prefabs/Tilemaps.prefab.meta
+    - Assets/Creator Kit - RPG/Prefabs/UI Camera.prefab
+    - Assets/Creator Kit - RPG/Prefabs/UI Camera.prefab.meta
+    - Assets/Creator Kit - RPG/Scenes.meta
+    - Assets/Creator Kit - RPG/Scenes/BlankScene.unity.meta
+    - Assets/Creator Kit - RPG/Scenes/SampleScene.unity
+    - Assets/Creator Kit - RPG/Scenes/SampleScene.unity.meta
+    - Assets/Creator Kit - RPG/Scenes/Town.unity
+    - Assets/Creator Kit - RPG/Scenes/Town.unity.meta
+    - Assets/Creator Kit - RPG/Scripts.meta
+    - Assets/Creator Kit - RPG/Scripts/Core.meta
+    - Assets/Creator Kit - RPG/Scripts/Core/Event.cs
+    - Assets/Creator Kit - RPG/Scripts/Core/Event.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/Core/HeapQueue.cs
+    - Assets/Creator Kit - RPG/Scripts/Core/HeapQueue.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/Core/InstanceRegister.cs
+    - Assets/Creator Kit - RPG/Scripts/Core/InstanceRegister.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/Core/InstanceTracker.cs
+    - Assets/Creator Kit - RPG/Scripts/Core/InstanceTracker.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/Core/Schedule.cs
+    - Assets/Creator Kit - RPG/Scripts/Core/Schedule.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/Gameplay.meta
+    - Assets/Creator Kit - RPG/Scripts/Gameplay/AnimationBatchController.cs
+    - Assets/Creator Kit - RPG/Scripts/Gameplay/AnimationBatchController.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/Gameplay/CameraController.cs
+    - Assets/Creator Kit - RPG/Scripts/Gameplay/CameraController.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/Gameplay/CharacterController2D.cs
+    - Assets/Creator Kit - RPG/Scripts/Gameplay/CharacterController2D.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/Gameplay/CloudSystem.cs
+    - Assets/Creator Kit - RPG/Scripts/Gameplay/CloudSystem.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/Gameplay/ConversationOption.cs
+    - Assets/Creator Kit - RPG/Scripts/Gameplay/ConversationOption.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/Gameplay/ConversationPiece.cs
+    - Assets/Creator Kit - RPG/Scripts/Gameplay/ConversationPiece.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/Gameplay/ConversationScript.cs
+    - Assets/Creator Kit - RPG/Scripts/Gameplay/ConversationScript.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/Gameplay/FadingSprite.cs
+    - Assets/Creator Kit - RPG/Scripts/Gameplay/FadingSprite.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/Gameplay/FadingSpriteSystem.cs
+    - Assets/Creator Kit - RPG/Scripts/Gameplay/FadingSpriteSystem.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/Gameplay/FootstepTimer.cs
+    - Assets/Creator Kit - RPG/Scripts/Gameplay/FootstepTimer.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/Gameplay/GameController.cs
+    - Assets/Creator Kit - RPG/Scripts/Gameplay/GameController.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/Gameplay/GameModel.cs
+    - Assets/Creator Kit - RPG/Scripts/Gameplay/GameModel.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/Gameplay/InputController.cs
+    - Assets/Creator Kit - RPG/Scripts/Gameplay/InputController.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/Gameplay/InventoryItem.cs
+    - Assets/Creator Kit - RPG/Scripts/Gameplay/InventoryItem.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/Gameplay/MusicController.cs
+    - Assets/Creator Kit - RPG/Scripts/Gameplay/MusicController.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/Gameplay/NPCController.cs
+    - Assets/Creator Kit - RPG/Scripts/Gameplay/NPCController.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/Gameplay/Quest.cs
+    - Assets/Creator Kit - RPG/Scripts/Gameplay/Quest.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/Gameplay/ShowConversation.cs
+    - Assets/Creator Kit - RPG/Scripts/Gameplay/ShowConversation.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/Gameplay/StartQuest.cs
+    - Assets/Creator Kit - RPG/Scripts/Gameplay/StartQuest.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/Gameplay/StopTalking.cs
+    - Assets/Creator Kit - RPG/Scripts/Gameplay/StopTalking.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/Gameplay/StoryItem.cs
+    - Assets/Creator Kit - RPG/Scripts/Gameplay/StoryItem.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Animated Tile.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Animated Tile/Scripts.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Animated Tile/Scripts/AnimatedTile.cs
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Animated Tile/Scripts/AnimatedTile.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Brushes.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Brushes/Coordinate Brush.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Brushes/Coordinate Brush/Scripts.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Brushes/Coordinate Brush/Scripts/Editor.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Brushes/Coordinate Brush/Scripts/Editor/CoordinateBrush.cs
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Brushes/Coordinate Brush/Scripts/Editor/CoordinateBrush.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Brushes/GameObject Brush.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Brushes/GameObject Brush/Scripts.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Brushes/GameObject Brush/Scripts/Editor.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Brushes/GameObject Brush/Scripts/Editor/GameObjectBrush.cs
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Brushes/GameObject Brush/Scripts/Editor/GameObjectBrush.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Brushes/Group Brush.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Brushes/Group Brush/Scripts.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Brushes/Group Brush/Scripts/Editor.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Brushes/Group Brush/Scripts/Editor/GroupBrush.cs
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Brushes/Group Brush/Scripts/Editor/GroupBrush.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Brushes/Line Brush.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Brushes/Line Brush/Scripts.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Brushes/Line Brush/Scripts/Editor.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Brushes/Line Brush/Scripts/Editor/LineBrush.cs
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Brushes/Line Brush/Scripts/Editor/LineBrush.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Brushes/Prefab Brush.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Brushes/Prefab Brush/Scripts.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Brushes/Prefab Brush/Scripts/Editor.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Brushes/Prefab Brush/Scripts/Editor/PrefabBrush.cs
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Brushes/Prefab Brush/Scripts/Editor/PrefabBrush.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Brushes/Random Brush.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Brushes/Random Brush/Scripts.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Brushes/Random Brush/Scripts/Editor.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Brushes/Random Brush/Scripts/Editor/RandomBrush.cs
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Brushes/Random Brush/Scripts/Editor/RandomBrush.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Brushes/Tint Brush Smooth.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Brushes/Tint Brush Smooth/Scripts.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Brushes/Tint Brush Smooth/Scripts/Editor.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Brushes/Tint Brush Smooth/Scripts/Editor/TintBrushSmooth.cs
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Brushes/Tint Brush Smooth/Scripts/Editor/TintBrushSmooth.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Brushes/Tint Brush Smooth/Scripts/TintTextureGenerator.cs
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Brushes/Tint Brush Smooth/Scripts/TintTextureGenerator.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Brushes/Tint Brush Smooth/Shaders.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Brushes/Tint Brush Smooth/Shaders/TintedTilemap.shader
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Brushes/Tint Brush Smooth/Shaders/TintedTilemap.shader.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Brushes/Tint Brush.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Brushes/Tint Brush/Scripts.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Brushes/Tint Brush/Scripts/Editor.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Brushes/Tint Brush/Scripts/Editor/TintBrush.cs
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Brushes/Tint Brush/Scripts/Editor/TintBrush.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Custom.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Custom/FenceTile.cs
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Custom/FenceTile.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Custom/PipelineTile.cs
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Custom/PipelineTile.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/GridInformation.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/GridInformation/Scripts.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/GridInformation/Scripts/GridInformation.cs
+    - Assets/Creator Kit - RPG/Scripts/Tiles/GridInformation/Scripts/GridInformation.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Hexagonal Rule Tile.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Hexagonal Rule Tile/Editor.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Hexagonal Rule Tile/Editor/HexagonalRuleTileEditor.cs
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Hexagonal Rule Tile/Editor/HexagonalRuleTileEditor.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Hexagonal Rule Tile/HexagonalRuleTile.cs
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Hexagonal Rule Tile/HexagonalRuleTile.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Isometric Rule Tile.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Isometric Rule Tile/Editor.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Isometric Rule Tile/Editor/IsometricRuleTileEditor.cs
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Isometric Rule Tile/Editor/IsometricRuleTileEditor.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Isometric Rule Tile/IsometricRuleTile.cs
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Isometric Rule Tile/IsometricRuleTile.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Random Tile.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Random Tile/Scripts.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Random Tile/Scripts/RandomTile.cs
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Random Tile/Scripts/RandomTile.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Rule Override Tile.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Rule Override Tile/Scripts.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Rule Override Tile/Scripts/Editor.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Rule Override Tile/Scripts/Editor/RuleOverrideTileEditor.cs
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Rule Override Tile/Scripts/Editor/RuleOverrideTileEditor.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Rule Override Tile/Scripts/RuleOverrideTile.cs
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Rule Override Tile/Scripts/RuleOverrideTile.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Rule Tile.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Rule Tile/ScriptTemplates.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Rule Tile/ScriptTemplates/NewCustomRuleTile.cs.txt
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Rule Tile/ScriptTemplates/NewCustomRuleTile.cs.txt.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Rule Tile/Scripts.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Rule Tile/Scripts/Editor.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Rule Tile/Scripts/Editor/CustomRuleTileMenu.cs
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Rule Tile/Scripts/Editor/CustomRuleTileMenu.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Rule Tile/Scripts/Editor/RuleTileEditor.cs
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Rule Tile/Scripts/Editor/RuleTileEditor.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Rule Tile/Scripts/RuleTile.cs
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Rule Tile/Scripts/RuleTile.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Terrain Tile.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Terrain Tile/Scripts.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Terrain Tile/Scripts/TerrainTile.cs
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Terrain Tile/Scripts/TerrainTile.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Weighted Random Tile.meta
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Weighted Random Tile/WeightedRandomTile.cs
+    - Assets/Creator Kit - RPG/Scripts/Tiles/Weighted Random Tile/WeightedRandomTile.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/UI.meta
+    - Assets/Creator Kit - RPG/Scripts/UI/DialogController.cs
+    - Assets/Creator Kit - RPG/Scripts/UI/DialogController.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/UI/DialogLayout.cs
+    - Assets/Creator Kit - RPG/Scripts/UI/DialogLayout.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/UI/InventoryController.cs
+    - Assets/Creator Kit - RPG/Scripts/UI/InventoryController.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/UI/MessageBar.cs
+    - Assets/Creator Kit - RPG/Scripts/UI/MessageBar.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/UI/SpriteButton.cs
+    - Assets/Creator Kit - RPG/Scripts/UI/SpriteButton.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/UI/SpriteUIElement.cs
+    - Assets/Creator Kit - RPG/Scripts/UI/SpriteUIElement.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/UI/TranslationAnimation.cs
+    - Assets/Creator Kit - RPG/Scripts/UI/TranslationAnimation.cs.meta
+    - Assets/Creator Kit - RPG/Scripts/UI/UserInterfaceAudio.cs
+    - Assets/Creator Kit - RPG/Scripts/UI/UserInterfaceAudio.cs.meta
+    - Assets/Creator Kit - RPG/Shaders.meta
+    - Assets/Creator Kit - RPG/Shaders/Cutscene.shader
+    - Assets/Creator Kit - RPG/Shaders/Cutscene.shader.meta
+    - Assets/CreatorKitRPG_Third-PartyNotice.txt
+    - Assets/CreatorKitRPG_Third-PartyNotice.txt.meta
+    - Assets/Gizmos.meta
+    - Assets/Gizmos/Cinemachine.meta
+    - Assets/Gizmos/Cinemachine/cm_logo_lg.png.meta
+    - Assets/Gizmos/inventory.png.meta
+    - Assets/Gizmos/quest.png.meta
+    - Assets/Gizmos/story.png.meta
+    - Assets/Readme.asset
+    - Assets/Readme.asset.meta
+    - Assets/Test1.unity
+    - Assets/Test1.unity.meta
+    - Assets/TextMesh Pro.meta
+    - Assets/TextMesh Pro/Documentation.meta
+    - Assets/TextMesh Pro/Documentation/TextMesh Pro User Guide 2016.pdf.meta
+    - Assets/TextMesh Pro/Resources.meta
+    - Assets/TextMesh Pro/Resources/Fonts & Materials.meta
+    - Assets/TextMesh Pro/Resources/Fonts & Materials/Mister Pixel Regular SDF.asset
+    - Assets/TextMesh Pro/Resources/Fonts & Materials/Mister Pixel Regular SDF.asset.meta
+    - Assets/TextMesh Pro/Resources/Fonts & Materials/mr-pixel.meta
+    - Assets/TextMesh Pro/Resources/Fonts & Materials/mr-pixel/VTF MisterPixel.meta
+    - Assets/TextMesh Pro/Resources/Fonts & Materials/mr-pixel/VTF MisterPixel/Velvetyne
+      Black Font Licence.txt
+    - Assets/TextMesh Pro/Resources/Fonts & Materials/mr-pixel/VTF MisterPixel/Velvetyne
+      Black Font Licence.txt.meta
+    - Assets/TextMesh Pro/Resources/Fonts & Materials/mr-pixel/VTF MisterPixel/otf.meta
+    - Assets/TextMesh Pro/Resources/Fonts & Materials/mr-pixel/VTF MisterPixel/otf/Mister
+      Pixel Regular.otf.meta
+    - Assets/TextMesh Pro/Resources/Fonts & Materials/mr-pixel/VTF MisterPixel/otf/Mister
+      Pixel Tools.otf.meta
+    - Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt.meta
+    - Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt.meta
+    - Assets/TextMesh Pro/Resources/Shaders.meta
+    - Assets/TextMesh Pro/Resources/Shaders/TMP_Bitmap-Custom-Atlas.shader
+    - Assets/TextMesh Pro/Resources/Shaders/TMP_Bitmap-Custom-Atlas.shader.meta
+    - Assets/TextMesh Pro/Resources/Shaders/TMP_Bitmap-Mobile.shader
+    - Assets/TextMesh Pro/Resources/Shaders/TMP_Bitmap-Mobile.shader.meta
+    - Assets/TextMesh Pro/Resources/Shaders/TMP_Bitmap.shader
+    - Assets/TextMesh Pro/Resources/Shaders/TMP_Bitmap.shader.meta
+    - Assets/TextMesh Pro/Resources/Shaders/TMP_SDF Overlay.shader
+    - Assets/TextMesh Pro/Resources/Shaders/TMP_SDF Overlay.shader.meta
+    - Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Mobile Masking.shader
+    - Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Mobile Masking.shader.meta
+    - Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Mobile Overlay.shader
+    - Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Mobile Overlay.shader.meta
+    - Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Mobile.shader
+    - Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Mobile.shader.meta
+    - Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Surface-Mobile.shader
+    - Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Surface-Mobile.shader.meta
+    - Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Surface.shader
+    - Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Surface.shader.meta
+    - Assets/TextMesh Pro/Resources/Shaders/TMP_SDF.shader
+    - Assets/TextMesh Pro/Resources/Shaders/TMP_SDF.shader.meta
+    - Assets/TextMesh Pro/Resources/Shaders/TMP_Sprite.shader
+    - Assets/TextMesh Pro/Resources/Shaders/TMP_Sprite.shader.meta
+    - Assets/TextMesh Pro/Resources/Shaders/TMPro.cginc
+    - Assets/TextMesh Pro/Resources/Shaders/TMPro.cginc.meta
+    - Assets/TextMesh Pro/Resources/Shaders/TMPro_Properties.cginc
+    - Assets/TextMesh Pro/Resources/Shaders/TMPro_Properties.cginc.meta
+    - Assets/TextMesh Pro/Resources/Shaders/TMPro_Surface.cginc
+    - Assets/TextMesh Pro/Resources/Shaders/TMPro_Surface.cginc.meta
+    - Assets/TextMesh Pro/Resources/Sprite Assets.meta
+    - Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset
+    - Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset.meta
+    - Assets/TextMesh Pro/Resources/Style Sheets.meta
+    - Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset
+    - Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset.meta
+    - Assets/TextMesh Pro/Resources/TMP Settings.asset
+    - Assets/TextMesh Pro/Resources/TMP Settings.asset.meta
+    - Assets/TextMesh Pro/Sprites.meta
+    - Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt
+    - Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt.meta
+    - Assets/TextMesh Pro/Sprites/EmojiOne.json
+    - Assets/TextMesh Pro/Sprites/EmojiOne.json.meta
+    - Assets/TextMesh Pro/Sprites/EmojiOne.png.meta
+    - Assets/TutorialInfo.meta
+    - Assets/TutorialInfo/Icons.meta
+    - Assets/TutorialInfo/Icons/Help_Icon.png.meta
+    - Assets/TutorialInfo/Icons/icon_tutorial_package.png.meta
+    - Assets/TutorialInfo/Layout.wlt
+    - Assets/TutorialInfo/Layout.wlt.meta
+    - Assets/TutorialInfo/Scripts.meta
+    - Assets/TutorialInfo/Scripts/Editor.meta
+    - Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs
+    - Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs.meta
+    - Assets/TutorialInfo/Scripts/Readme.cs
+    - Assets/TutorialInfo/Scripts/Readme.cs.meta
+    - ProjectSettings/AudioManager.asset
+    - ProjectSettings/ClusterInputManager.asset
+    - ProjectSettings/DynamicsManager.asset
+    - ProjectSettings/EditorBuildSettings.asset
+    - ProjectSettings/EditorSettings.asset
+    - ProjectSettings/GraphicsSettings.asset
+    - ProjectSettings/InputManager.asset
+    - ProjectSettings/NavMeshAreas.asset
+    - ProjectSettings/Physics2DSettings.asset
+    - ProjectSettings/PresetManager.asset
+    - ProjectSettings/ProjectSettings.asset
+    - ProjectSettings/QualitySettings.asset
+    - ProjectSettings/TagManager.asset
+    - ProjectSettings/TimeManager.asset
+    - ProjectSettings/VFXManager.asset
+    - ProjectSettings/VersionControlSettings.asset
+    - 
+    m_Values: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  RevisionSummary: 
+  ChangesSearchValue: 
+  SelectedHistoryRevision: 
+  HistoryPageNumber: 0
+  TabIndex: 0
