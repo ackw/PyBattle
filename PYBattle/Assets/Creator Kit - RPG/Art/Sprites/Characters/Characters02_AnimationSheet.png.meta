@@ -4,154 +4,154 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 21300000
-    second: Warrior_WalkEW_00
+    second: RedPy_WalkEW_00
   - first:
       213: 21300002
-    second: Warrior_WalkEW_01
+    second: RedPy_WalkEW_01
   - first:
       213: 21300004
-    second: Warrior_WalkEW_02
+    second: RedPy_WalkEW_02
   - first:
       213: 21300006
-    second: Warrior_WalkEW_03
+    second: RedPy_WalkEW_03
   - first:
       213: 21300008
-    second: Warrior_WalkEW_04
+    second: RedPy_WalkEW_04
   - first:
       213: 21300010
-    second: Warrior_WalkEW_05
+    second: RedPy_WalkEW_05
   - first:
       213: 21300012
-    second: Warrior_WalkEW_06
+    second: RedPy_WalkEW_06
   - first:
       213: 21300014
-    second: Warrior_WalkEW_07
+    second: RedPy_WalkEW_07
   - first:
       213: 21300016
-    second: Warrior_WalkS_00
+    second: RedPy_WalkS_00
   - first:
       213: 21300018
-    second: Warrior_WalkS_01
+    second: RedPy_WalkS_01
   - first:
       213: 21300020
-    second: Warrior_WalkS_02
+    second: RedPy_WalkS_02
   - first:
       213: 21300022
-    second: Warrior_WalkS_03
+    second: RedPy_WalkS_03
   - first:
       213: 21300024
-    second: Warrior_WalkS_04
+    second: RedPy_WalkS_04
   - first:
       213: 21300026
-    second: Warrior_WalkS_05
+    second: RedPy_WalkS_05
   - first:
       213: 21300028
-    second: Warrior_WalkS_06
+    second: RedPy_WalkS_06
   - first:
       213: 21300030
-    second: Warrior_WalkS_07
+    second: RedPy_WalkS_07
   - first:
       213: 21300032
-    second: Warrior_WalkN_00
+    second: RedPy_WalkN_00
   - first:
       213: 21300034
-    second: Warrior_WalkN_01
+    second: RedPy_WalkN_01
   - first:
       213: 21300036
-    second: Warrior_WalkN_02
+    second: RedPy_WalkN_02
   - first:
       213: 21300038
-    second: Warrior_WalkN_03
+    second: RedPy_WalkN_03
   - first:
       213: 21300040
-    second: Warrior_WalkN_04
+    second: RedPy_WalkN_04
   - first:
       213: 21300042
-    second: Warrior_WalkN_05
+    second: RedPy_WalkN_05
   - first:
       213: 21300044
-    second: Warrior_WalkN_06
+    second: RedPy_WalkN_06
   - first:
       213: 21300046
-    second: Warrior_WalkN_07
+    second: RedPy_WalkN_07
   - first:
       213: 21300048
-    second: _Warrior
+    second: _Bandit02
   - first:
       213: 21300050
-    second: Warrior_Idle_01
+    second: Bandit02_Idle_01
   - first:
       213: 21300052
-    second: Warrior_Idle_02
+    second: Bandit02_Idle_02
   - first:
       213: 21300054
-    second: Warrior_Idle_03
+    second: Bandit02_Idle_03
   - first:
       213: 21300056
-    second: Warrior_Idle_04
+    second: Bandit02_Idle_04
   - first:
       213: 21300058
-    second: Warrior_Idle_05
+    second: Bandit02_Idle_05
   - first:
       213: 21300060
-    second: Warrior_Idle_06
+    second: Bandit02_Idle_06
   - first:
       213: 21300062
-    second: Warrior_Idle_07
+    second: Bandit02_Idle_07
   - first:
       213: 21300064
-    second: _Villager01
+    second: _Bandit01
   - first:
       213: 21300066
-    second: Villager01_Idle_01
+    second: Bandit01_Idle_01
   - first:
       213: 21300068
-    second: Villager01_Idle_02
+    second: Bandit01_Idle_02
   - first:
       213: 21300070
-    second: Villager01_Idle_03
+    second: Bandit01_Idle_03
   - first:
       213: 21300072
-    second: Villager01_Idle_04
+    second: Bandit01_Idle_04
   - first:
       213: 21300074
-    second: Villager01_Idle_05
+    second: Bandit01_Idle_05
   - first:
       213: 21300076
-    second: Villager01_Idle_06
+    second: Bandit01_Idle_06
   - first:
       213: 21300078
-    second: Villager01_Idle_07
+    second: Bandit01_Idle_07
   - first:
       213: 21300080
-    second: _Villager02
+    second: _BluePy
   - first:
       213: 21300082
-    second: Villager02_Idle_01
+    second: BluePy_01
   - first:
       213: 21300084
-    second: Villager02_Idle_02
+    second: BluePy_02
   - first:
       213: 21300086
-    second: Villager02_Idle_03
+    second: BluePy_03
   - first:
       213: 21300088
-    second: Villager02_Idle_04
+    second: BluePy_04
   - first:
       213: 21300090
-    second: Villager02_Idle_05
+    second: BluePy_05
   - first:
       213: 21300092
-    second: Villager02_Idle_06
+    second: BluePy_06
   - first:
       213: 21300094
-    second: Villager02_Idle_07
+    second: BluePy_07
   - first:
       213: 21300096
-    second: _Chicken
+    second: _YellowPy
   - first:
       213: 21300098
-    second: Chicken_Idle_01
+    second: YellowPy_Idle_01
   - first:
       213: 21300100
     second: WarriorAndVillagers_AnimationSheet_50
@@ -275,7 +275,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Warrior_WalkEW_00
+      name: RedPy_WalkEW_00
       rect:
         serializedVersion: 2
         x: 0
@@ -292,11 +292,11 @@ TextureImporter:
       spriteID: 46d52e1e581af49a78fa5465c99791c9
       internalID: 21300000
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Warrior_WalkEW_01
+      name: RedPy_WalkEW_01
       rect:
         serializedVersion: 2
         x: 64
@@ -313,11 +313,11 @@ TextureImporter:
       spriteID: 2660cc95a4118477b8319b7013c10692
       internalID: 21300002
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Warrior_WalkEW_02
+      name: RedPy_WalkEW_02
       rect:
         serializedVersion: 2
         x: 128
@@ -334,11 +334,11 @@ TextureImporter:
       spriteID: dec397028763d4b25b8f3dff0d20c9c2
       internalID: 21300004
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Warrior_WalkEW_03
+      name: RedPy_WalkEW_03
       rect:
         serializedVersion: 2
         x: 192
@@ -355,11 +355,11 @@ TextureImporter:
       spriteID: fdbdcaa9d8f9c4954a39e2f9818d2ed9
       internalID: 21300006
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Warrior_WalkEW_04
+      name: RedPy_WalkEW_04
       rect:
         serializedVersion: 2
         x: 256
@@ -376,11 +376,11 @@ TextureImporter:
       spriteID: 8a40f93cef5f545bcb6802d609d0ad8c
       internalID: 21300008
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Warrior_WalkEW_05
+      name: RedPy_WalkEW_05
       rect:
         serializedVersion: 2
         x: 320
@@ -397,11 +397,11 @@ TextureImporter:
       spriteID: d62094a891f5d4845b6e51f8a4fadf41
       internalID: 21300010
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Warrior_WalkEW_06
+      name: RedPy_WalkEW_06
       rect:
         serializedVersion: 2
         x: 384
@@ -418,11 +418,11 @@ TextureImporter:
       spriteID: 52cacc3b41493483aba4a5e89e7a4fc0
       internalID: 21300012
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Warrior_WalkEW_07
+      name: RedPy_WalkEW_07
       rect:
         serializedVersion: 2
         x: 448
@@ -439,11 +439,11 @@ TextureImporter:
       spriteID: 7ceb1f0987a5f491497bc7c6da33b51b
       internalID: 21300014
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Warrior_WalkS_00
+      name: RedPy_WalkS_00
       rect:
         serializedVersion: 2
         x: 0
@@ -460,11 +460,11 @@ TextureImporter:
       spriteID: a91b07347ec3b4465ba2b8a4a7837e94
       internalID: 21300016
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Warrior_WalkS_01
+      name: RedPy_WalkS_01
       rect:
         serializedVersion: 2
         x: 64
@@ -481,11 +481,11 @@ TextureImporter:
       spriteID: 94249836334594fdd84861403733fcf6
       internalID: 21300018
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Warrior_WalkS_02
+      name: RedPy_WalkS_02
       rect:
         serializedVersion: 2
         x: 128
@@ -502,11 +502,11 @@ TextureImporter:
       spriteID: 572797985d76d4bb18abf60fe2f19747
       internalID: 21300020
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Warrior_WalkS_03
+      name: RedPy_WalkS_03
       rect:
         serializedVersion: 2
         x: 192
@@ -523,11 +523,11 @@ TextureImporter:
       spriteID: d7f0443aa8f5f498f877b8f7462c8214
       internalID: 21300022
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Warrior_WalkS_04
+      name: RedPy_WalkS_04
       rect:
         serializedVersion: 2
         x: 256
@@ -544,11 +544,11 @@ TextureImporter:
       spriteID: 8d9b62ab4a1324ca6a26a12b3add59c4
       internalID: 21300024
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Warrior_WalkS_05
+      name: RedPy_WalkS_05
       rect:
         serializedVersion: 2
         x: 320
@@ -565,11 +565,11 @@ TextureImporter:
       spriteID: fcc11fb49815a4f31b7e0455980901a8
       internalID: 21300026
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Warrior_WalkS_06
+      name: RedPy_WalkS_06
       rect:
         serializedVersion: 2
         x: 384
@@ -586,11 +586,11 @@ TextureImporter:
       spriteID: ca428432e667a442e9f00a0ba37638d2
       internalID: 21300028
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Warrior_WalkS_07
+      name: RedPy_WalkS_07
       rect:
         serializedVersion: 2
         x: 448
@@ -607,11 +607,11 @@ TextureImporter:
       spriteID: 99e3dfeb15f8f43b3b4bcb4a1e109df5
       internalID: 21300030
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Warrior_WalkN_00
+      name: RedPy_WalkN_00
       rect:
         serializedVersion: 2
         x: 0
@@ -628,11 +628,11 @@ TextureImporter:
       spriteID: 5b71a80cb2b3a4a55999907e0f93af98
       internalID: 21300032
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Warrior_WalkN_01
+      name: RedPy_WalkN_01
       rect:
         serializedVersion: 2
         x: 64
@@ -649,11 +649,11 @@ TextureImporter:
       spriteID: d0030765a91d94a118fe2648d31bd011
       internalID: 21300034
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Warrior_WalkN_02
+      name: RedPy_WalkN_02
       rect:
         serializedVersion: 2
         x: 128
@@ -670,11 +670,11 @@ TextureImporter:
       spriteID: 4239cc4cbe4cd4d2ea102dd79fd18bbb
       internalID: 21300036
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Warrior_WalkN_03
+      name: RedPy_WalkN_03
       rect:
         serializedVersion: 2
         x: 192
@@ -691,11 +691,11 @@ TextureImporter:
       spriteID: 265379ac8e7924001b0a811721a84f95
       internalID: 21300038
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Warrior_WalkN_04
+      name: RedPy_WalkN_04
       rect:
         serializedVersion: 2
         x: 256
@@ -712,11 +712,11 @@ TextureImporter:
       spriteID: 6aa60b94f88994c1a907304f02dfec2a
       internalID: 21300040
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Warrior_WalkN_05
+      name: RedPy_WalkN_05
       rect:
         serializedVersion: 2
         x: 320
@@ -733,11 +733,11 @@ TextureImporter:
       spriteID: ff2e11f465cc541a6b36da17c76894f9
       internalID: 21300042
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Warrior_WalkN_06
+      name: RedPy_WalkN_06
       rect:
         serializedVersion: 2
         x: 384
@@ -754,11 +754,11 @@ TextureImporter:
       spriteID: c2f3fb27eb57c4eec9a3a2049a07bb77
       internalID: 21300044
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Warrior_WalkN_07
+      name: RedPy_WalkN_07
       rect:
         serializedVersion: 2
         x: 448
@@ -775,11 +775,11 @@ TextureImporter:
       spriteID: 3dc0b991984b248ef87e28423b322868
       internalID: 21300046
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _Warrior
+      name: _Bandit02
       rect:
         serializedVersion: 2
         x: 0
@@ -796,11 +796,11 @@ TextureImporter:
       spriteID: 4abc6c36f66c943c3a6d6d4d9435c7a7
       internalID: 21300048
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Warrior_Idle_01
+      name: Bandit02_Idle_01
       rect:
         serializedVersion: 2
         x: 64
@@ -817,11 +817,11 @@ TextureImporter:
       spriteID: 29c1788ccd45c4921a59806180f45034
       internalID: 21300050
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Warrior_Idle_02
+      name: Bandit02_Idle_02
       rect:
         serializedVersion: 2
         x: 128
@@ -838,11 +838,11 @@ TextureImporter:
       spriteID: bd2ebcd7488b949c384fe2f62ad7b576
       internalID: 21300052
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Warrior_Idle_03
+      name: Bandit02_Idle_03
       rect:
         serializedVersion: 2
         x: 192
@@ -859,11 +859,11 @@ TextureImporter:
       spriteID: d041547a742894ea4b909c7155c1ffbc
       internalID: 21300054
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Warrior_Idle_04
+      name: Bandit02_Idle_04
       rect:
         serializedVersion: 2
         x: 256
@@ -880,11 +880,11 @@ TextureImporter:
       spriteID: 3d675d3a48ba74efd828f4042f919ede
       internalID: 21300056
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Warrior_Idle_05
+      name: Bandit02_Idle_05
       rect:
         serializedVersion: 2
         x: 320
@@ -901,11 +901,11 @@ TextureImporter:
       spriteID: 0636a633310ec40d4856f66390e82896
       internalID: 21300058
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Warrior_Idle_06
+      name: Bandit02_Idle_06
       rect:
         serializedVersion: 2
         x: 384
@@ -922,11 +922,11 @@ TextureImporter:
       spriteID: e1c5f684be58044bc933354ff5c7c13b
       internalID: 21300060
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Warrior_Idle_07
+      name: Bandit02_Idle_07
       rect:
         serializedVersion: 2
         x: 448
@@ -943,11 +943,11 @@ TextureImporter:
       spriteID: fd162b48cc5f842d78abad06b5408f84
       internalID: 21300062
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _Villager01
+      name: _Bandit01
       rect:
         serializedVersion: 2
         x: 0
@@ -964,11 +964,11 @@ TextureImporter:
       spriteID: 4970262daa3054158bd25486421d4e37
       internalID: 21300064
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Villager01_Idle_01
+      name: Bandit01_Idle_01
       rect:
         serializedVersion: 2
         x: 64
@@ -985,11 +985,11 @@ TextureImporter:
       spriteID: 9839bc7420f90417daf6d13efc193e5c
       internalID: 21300066
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Villager01_Idle_02
+      name: Bandit01_Idle_02
       rect:
         serializedVersion: 2
         x: 128
@@ -1006,11 +1006,11 @@ TextureImporter:
       spriteID: 24fb7405588cd4343ba1eb0ce1d96453
       internalID: 21300068
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Villager01_Idle_03
+      name: Bandit01_Idle_03
       rect:
         serializedVersion: 2
         x: 192
@@ -1027,11 +1027,11 @@ TextureImporter:
       spriteID: 2310d82b2a6bc408bab62e7db48374b7
       internalID: 21300070
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Villager01_Idle_04
+      name: Bandit01_Idle_04
       rect:
         serializedVersion: 2
         x: 256
@@ -1048,11 +1048,11 @@ TextureImporter:
       spriteID: 56a4ea8f285c84ee4b4c5e5951aa81fc
       internalID: 21300072
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Villager01_Idle_05
+      name: Bandit01_Idle_05
       rect:
         serializedVersion: 2
         x: 320
@@ -1069,11 +1069,11 @@ TextureImporter:
       spriteID: 941b3f52b28d14716a53203076d01bfb
       internalID: 21300074
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Villager01_Idle_06
+      name: Bandit01_Idle_06
       rect:
         serializedVersion: 2
         x: 384
@@ -1090,11 +1090,11 @@ TextureImporter:
       spriteID: b28d6c0dae6044ff786f3b103f98c55e
       internalID: 21300076
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Villager01_Idle_07
+      name: Bandit01_Idle_07
       rect:
         serializedVersion: 2
         x: 448
@@ -1111,11 +1111,11 @@ TextureImporter:
       spriteID: 94a2235c63a5b492caf9c1e207fe2de0
       internalID: 21300078
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _Villager02
+      name: _BluePy
       rect:
         serializedVersion: 2
         x: 0
@@ -1132,11 +1132,11 @@ TextureImporter:
       spriteID: c50b5d017120744d4bc07f502bf2b0e7
       internalID: 21300080
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Villager02_Idle_01
+      name: BluePy_01
       rect:
         serializedVersion: 2
         x: 64
@@ -1153,11 +1153,11 @@ TextureImporter:
       spriteID: d7e7bdcaf84a94077a7433c88ab13ca7
       internalID: 21300082
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Villager02_Idle_02
+      name: BluePy_02
       rect:
         serializedVersion: 2
         x: 128
@@ -1174,11 +1174,11 @@ TextureImporter:
       spriteID: 26954f40b9df543e394d6746741fae36
       internalID: 21300084
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Villager02_Idle_03
+      name: BluePy_03
       rect:
         serializedVersion: 2
         x: 192
@@ -1195,11 +1195,11 @@ TextureImporter:
       spriteID: b1c9742296ba3451884bf187c1cce472
       internalID: 21300086
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Villager02_Idle_04
+      name: BluePy_04
       rect:
         serializedVersion: 2
         x: 256
@@ -1216,11 +1216,11 @@ TextureImporter:
       spriteID: 13888406067de489fa53a1c9e594dbc8
       internalID: 21300088
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Villager02_Idle_05
+      name: BluePy_05
       rect:
         serializedVersion: 2
         x: 320
@@ -1237,11 +1237,11 @@ TextureImporter:
       spriteID: c260805d4c367447cac18f00b1b1e68e
       internalID: 21300090
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Villager02_Idle_06
+      name: BluePy_06
       rect:
         serializedVersion: 2
         x: 384
@@ -1258,11 +1258,11 @@ TextureImporter:
       spriteID: 5966071bdaef140c4ac7bde01af21fcb
       internalID: 21300092
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Villager02_Idle_07
+      name: BluePy_07
       rect:
         serializedVersion: 2
         x: 448
@@ -1279,11 +1279,11 @@ TextureImporter:
       spriteID: 7eee84ea7cabe4639899b284b5e4cf57
       internalID: 21300094
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _Chicken
+      name: _YellowPy
       rect:
         serializedVersion: 2
         x: 0
@@ -1300,11 +1300,11 @@ TextureImporter:
       spriteID: 7e72edb33f7ae476198ebdc2835a9803
       internalID: 21300096
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Chicken_Idle_01
+      name: YellowPy_Idle_01
       rect:
         serializedVersion: 2
         x: 64
@@ -1321,7 +1321,7 @@ TextureImporter:
       spriteID: 40e1ddf054e1d4dfcaf772788c22ef8a
       internalID: 21300098
       vertices: []
-      indices: 
+      indices:
       edges: []
       weights: []
     outline: []
@@ -1330,13 +1330,13 @@ TextureImporter:
     spriteID: 3a384a9fdea67184cb6718dbb801eca4
     internalID: 0
     vertices: []
-    indices: 
+    indices:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+  spritePackingTag:
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
+  userData:
+  assetBundleName:
+  assetBundleVariant:
