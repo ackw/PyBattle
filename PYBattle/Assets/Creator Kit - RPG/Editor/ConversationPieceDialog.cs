@@ -96,10 +96,14 @@ namespace RPGM.Gameplay
 
         protected override bool DrawWizardGUI()
         {
+
             if (Event.current.isKey && Event.current.keyCode == KeyCode.Escape)
             {
-                Close();
-                return true;
+              // if (keyCode == "1.1"){
+              //   SceneManager.LoadScene("Sections");
+              // }
+              Close();
+              return true;
             }
             isValid = true;
             EditorGUI.BeginChangeCheck();
