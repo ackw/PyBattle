@@ -9,6 +9,11 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
+<<<<<<< Updated upstream
     path: Assets/Creator Kit - RPG/Scenes/Town.unity
     guid: f27c3c6c55728814a9ee22964324cbde
+=======
+    path: Assets/Creator Kit - RPG/Scenes/CharacterSelector.unity
+    guid: 211ea0bf3960d484e999116a5c8760eb
+>>>>>>> Stashed changes
   m_configObjects: {}
