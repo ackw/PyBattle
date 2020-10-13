@@ -57509,7 +57509,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cave3
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8835582639856596520, guid: 74b5c6b26f0fc4028b9aac1a7a36767d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 74b5c6b26f0fc4028b9aac1a7a36767d, type: 3}
 --- !u!1001 &1957926093
 PrefabInstance:
