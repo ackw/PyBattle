@@ -11,13 +11,12 @@ public class GetMainChar : MonoBehaviour
     void Awake()
     {
         mySprite = this.GetComponent<SpriteRenderer>();
-
     }
 
     void Start()
     {
         int getCharacter;
-        getCharacter = PlayerPrefs.GetInt(SelectedChar);
+        getCharacter = PlayerPrefs.GetInt(SelectedChar,1);
 
         switch (getCharacter)
         {

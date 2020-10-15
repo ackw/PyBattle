@@ -24,6 +24,8 @@ public class CharManager : MonoBehaviour
         Char1Render = Char1.GetComponent<SpriteRenderer>();
         Char2Render = Char2.GetComponent<SpriteRenderer>();
         Char3Render = Char3.GetComponent<SpriteRenderer>();
+            
+        PlayerPrefs.SetInt(SelectedChar, 1);
     }
 
     public void NextCharBtn()
