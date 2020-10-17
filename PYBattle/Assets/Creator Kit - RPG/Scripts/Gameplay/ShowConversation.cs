@@ -4,7 +4,6 @@ using RPGM.Core;
 using RPGM.Gameplay;
 using RPGM.UI;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 namespace RPGM.Events
 {
@@ -26,13 +25,7 @@ namespace RPGM.Events
             if (string.IsNullOrEmpty(conversationItemKey))
                 ci = conversation.items[0];
             else
-            {
                 ci = conversation.Get(conversationItemKey);
-                if (ci.id == "1.0")
-                {
-                    SceneManager.LoadScene("Test");
-                }
-            }
 
 
             //if this item contains an unstarted quest, schedule a start quest event for the quest.
