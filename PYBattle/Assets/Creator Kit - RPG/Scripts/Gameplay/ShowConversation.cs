@@ -30,7 +30,7 @@ namespace RPGM.Events
                 ci = conversation.Get(conversationItemKey);
                 if (ci.id == "1.0")
                 {
-                    SceneManager.LoadScene("Test");
+                    SceneManager.LoadScene("WorldSelection");
                 }
             }
 

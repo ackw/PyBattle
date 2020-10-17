@@ -112,7 +112,7 @@ public class CharManager : MonoBehaviour
 
     public void ChangeScene()
     {
-        SceneManager.LoadScene("Sections");
+        SceneManager.LoadScene("GameSelection");
     }
 
 }
