@@ -16,14 +16,13 @@ public class GenerateWorld : MonoBehaviour
     public GameObject Text4;
     public GameObject Text5;
 
-    public List<SpriteRenderer> caveArray;
-    public List<MeshRenderer> textArray;
     public List<GameObject> caveList;
     public List<GameObject> textList;
-
+    public List<SpriteRenderer> caveRenderList;
+    public List<MeshRenderer> textRenderList;
+    
     void Awake()
     {
-
         caveList.Add(Cave1);
         caveList.Add(Cave2);
         caveList.Add(Cave3);
@@ -38,20 +37,22 @@ public class GenerateWorld : MonoBehaviour
 
         for (int i = 0; i < caveList.Count; i++)
         {
-            caveArray.Add(caveList[i].GetComponent<SpriteRenderer>());
-            textArray.Add(textList[i].GetComponent<MeshRenderer>());
+            caveRenderList.Add(caveList[i].GetComponent<SpriteRenderer>());
+            textRenderList.Add(textList[i].GetComponent<MeshRenderer>());
+
+            caveRenderList[i].enabled = false;
+            textRenderList[i].enabled = false;
+
             caveList[i].GetComponent<BoxCollider2D>().enabled = false;
-            caveArray[i].enabled = false;
-            textArray[i].enabled = false;
         }
 
-        int num = 3;
+        int num = 3; //replace with database no. of worlds
 
         for (int i = 0; i < num; i++)
         {
-            caveArray[i].enabled = true;
+            caveRenderList[i].enabled = true;
+            textRenderList[i].enabled = true;
             caveList[i].GetComponent<BoxCollider2D>().enabled = true;
-            textArray[i].enabled = true;
         }
 
     }
