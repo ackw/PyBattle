@@ -78,7 +78,7 @@ public class LoginScript : MonoBehaviour
                 if (string.Equals(results, "success"))
                 {
                     print("Login Success!");
-                    SceneManager.LoadScene("Worlds");
+                    SceneManager.LoadScene("GameSelection");
                 }
                 else
                 {

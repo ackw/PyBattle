@@ -25,7 +25,7 @@ public class LeaderboardStuff : MonoBehaviour
 
         returnButton.onClick.AddListener(() =>
         {
-            SceneManager.LoadScene("Worlds");
+            SceneManager.LoadScene("GameSelection");
         });
     }
 
