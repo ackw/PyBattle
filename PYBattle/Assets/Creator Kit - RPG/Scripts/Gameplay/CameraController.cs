@@ -24,6 +24,11 @@ namespace RPGM.Gameplay
         void Update()
         {
             transform.position = Vector3.Lerp(transform.position, focus.position - offset, Time.deltaTime * smoothTime);
+            
+            transform.position = new Vector3(
+            Mathf.Clamp(focus.position.x, -14.20f, 12.01f),
+            Mathf.Clamp(focus.position.y, -9.80f, 15.8f),
+            transform.position.z);
         }
     }
 }

@@ -76,6 +76,12 @@ namespace RPGM.Gameplay
                     MoveState();
                     break;
             }
+
+            transform.position = new Vector3(
+            Mathf.Clamp(transform.position.x, -22.40f, 20.01f),
+            Mathf.Clamp(transform.position.y, -12.95f, 18.2f),
+            transform.position.z);
+
         }
 
         void LateUpdate()
