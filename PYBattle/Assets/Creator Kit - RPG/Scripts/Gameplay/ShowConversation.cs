@@ -28,9 +28,9 @@ namespace RPGM.Events
             else
             {
                 ci = conversation.Get(conversationItemKey);
-                if (ci.id == "1.0")
+                if (ci.id == "1.1")
                 {
-                    SceneManager.LoadScene("WorldSelection");
+                    SceneManager.LoadScene("World");
                 }
             }
 
