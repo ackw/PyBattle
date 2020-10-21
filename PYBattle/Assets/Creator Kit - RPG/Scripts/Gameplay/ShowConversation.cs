@@ -32,7 +32,7 @@ namespace RPGM.Events
                 {
                     SceneManager.LoadScene("World");
                 }
-            }
+                }
 
 
             //if this item contains an unstarted quest, schedule a start quest event for the quest.
