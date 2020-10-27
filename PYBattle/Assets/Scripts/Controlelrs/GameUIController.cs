@@ -119,16 +119,21 @@ public class GameUIController : MonoBehaviour {
         ActivateAnswers(true);
 
         Answer1.transform.GetChild(0).GetComponent<Text>().text = answers[0].Description;
-        Answer1.tag = answers[0].IsTrue ? "true_answer" : "Untagged";
+        Answer1.tag = answers[0].IsTrue ? "Trueanswer" : "Untagged"; 
 
         Answer2.transform.GetChild(0).GetComponent<Text>().text = answers[1].Description;
-        Answer2.tag = answers[1].IsTrue ? "true_answer" : "Untagged";
+        Answer2.tag = answers[1].IsTrue ? "Trueanswer" : "Untagged";
 
         Answer3.transform.GetChild(0).GetComponent<Text>().text = answers[2].Description;
-        Answer3.tag = answers[2].IsTrue ? "true_answer" : "Untagged";
+        Answer3.tag = answers[2].IsTrue ? "Trueanswer" : "Untagged";
 
         Answer4.transform.GetChild(0).GetComponent<Text>().text = answers[3].Description;
-        Answer4.tag = answers[3].IsTrue ? "true_answer" : "Untagged";
+        Answer4.tag = answers[3].IsTrue ? "Trueanswer" : "Untagged";
+
+        print(Answer1.tag + "answer==>" + answers[0].IsTrue);
+        print(Answer2.tag + "answer==>" + answers[1].IsTrue);
+        print(Answer3.tag + "answer==>" + answers[2].IsTrue);
+        print(Answer4.tag + "answer==>" + answers[3].IsTrue);
 
     }
 
@@ -215,7 +220,8 @@ public class GameUIController : MonoBehaviour {
         }
         */
 
-        RaiseAnswerEvent(button.tag == "true_answer" ? RightAnswer : WrongAnswer);
+        RaiseAnswerEvent(button.tag == "Trueanswer" ? RightAnswer : WrongAnswer);
+        //RaiseAnswerEvent(string.Equals("trueAnswer",button.tag) ? RightAnswer : WrongAnswer);
 
     }
 

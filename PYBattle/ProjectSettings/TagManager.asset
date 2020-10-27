@@ -6,6 +6,7 @@ TagManager:
   tags:
   - player
   - Monster1
+  - Trueanswer
   layers:
   - Default
   - TransparentFX
