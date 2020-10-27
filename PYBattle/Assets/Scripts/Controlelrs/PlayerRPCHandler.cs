@@ -35,7 +35,7 @@ namespace Assets.Scripts.Controlelrs
         private bool masterNext = false;
 
 
-        
+
         public bool CanAnswer
         {
             get
@@ -83,15 +83,15 @@ namespace Assets.Scripts.Controlelrs
             _player.PlayerName = name;
         }
 
- 
+
 
         [PunRPC]
         public void PreparePlayers()
         {
             GameUIController.instance.PreparePlayers(PhotonNetwork.PlayerList);
-            QuestionController.instance.LoadQuestions();
+            StartCoroutine(QuestionController.instance.LoadQuestions());
 
-            
+
 
             StartCoroutine(WaitStart(StartDelay));
         }
@@ -107,7 +107,7 @@ namespace Assets.Scripts.Controlelrs
             if (PhotonNetwork.IsMasterClient)
                 QuestionController.instance.Next(0);
 
-            
+
             CanAnswer = true;
         }
 
@@ -127,14 +127,15 @@ namespace Assets.Scripts.Controlelrs
                 playerName1 = String.Copy(playerName);
                 print("COPIED P1" + playerName1);
             }
-            else if (String.IsNullOrEmpty(playerName2) && !playerName.Equals(playerName1)) {
+            else if (String.IsNullOrEmpty(playerName2) && !playerName.Equals(playerName1))
+            {
                 playerName2 = String.Copy(playerName);
                 print("COPIED P2" + playerName2);
             }
-            
+
             switch (photonEvent.Code)
             {
-                case 0: 
+                case 0:
 
                     Player[] players = PhotonNetwork.PlayerList;
 
@@ -144,9 +145,9 @@ namespace Assets.Scripts.Controlelrs
                         {
                             if (CanAnswer)
                             {
-                                
+
                                 GameUIController.instance.EnableAnswers(true);
-                                
+
                                 GameUIController.instance.StartAnswerTimer();
                                 _answered = true;
                                 return;
@@ -156,11 +157,11 @@ namespace Assets.Scripts.Controlelrs
                     }
                     CanAnswer = false;
                     GameUIController.instance.EnableBuzzer(false);
-                    
+
 
                     break;
                 case 1:
-                    
+
                     if (count < 4)
                     {
 
@@ -172,7 +173,8 @@ namespace Assets.Scripts.Controlelrs
                         {
                             updatedScorePlayer1 = updatedScore;
                         }
-                        else {
+                        else
+                        {
                             updatedScorePlayer2 = updatedScore;
                         }
 
@@ -183,7 +185,8 @@ namespace Assets.Scripts.Controlelrs
                         count++;
                         print(playerName1 + updatedScorePlayer1 + playerName2 + updatedScorePlayer2);
                     }
-                    else if (count == 4){
+                    else if (count == 4)
+                    {
 
                         updatedScore = PhotonRoom.instance.AddScore(playerName, GameSettings.instance.AnswerPoints);
                         CanAnswer = true;
@@ -192,7 +195,7 @@ namespace Assets.Scripts.Controlelrs
                         GameUIController.instance.EnableBuzzer(true);
 
                         count++;
-                        
+
                         if (playerName.Equals(playerName1))
                         {
                             updatedScorePlayer1 = updatedScore;
@@ -210,7 +213,7 @@ namespace Assets.Scripts.Controlelrs
                         PlayerPrefs.SetString("player2_name", playerName2);
                         SceneManager.LoadScene("EndPVP");
                     }
-                    
+
 
                     break;
                 case 2:
@@ -219,7 +222,7 @@ namespace Assets.Scripts.Controlelrs
                     if (_answered)
                         return;
                     */
-                    
+
                     if (count < 4)
                     {
                         updatedScore = PhotonRoom.instance.MinusScore(playerName, GameSettings.instance.AnswerPoints);
@@ -232,7 +235,7 @@ namespace Assets.Scripts.Controlelrs
                         GameUIController.instance.EnableBuzzer(true);
 
                         count++;
-                        
+
                         if (playerName.Equals(playerName1))
                         {
                             updatedScorePlayer1 = updatedScore;
@@ -243,7 +246,8 @@ namespace Assets.Scripts.Controlelrs
                         }
                         print(playerName1 + updatedScorePlayer1 + playerName2 + updatedScorePlayer2);
                     }
-                    else if (count == 4) {
+                    else if (count == 4)
+                    {
                         updatedScore = PhotonRoom.instance.MinusScore(playerName, GameSettings.instance.AnswerPoints);
                         CanAnswer = true;
 
@@ -251,7 +255,7 @@ namespace Assets.Scripts.Controlelrs
                         GameUIController.instance.EnableBuzzer(true);
 
                         count++;
-                        
+
                         if (playerName.Equals(playerName1))
                         {
                             updatedScorePlayer1 = updatedScore;

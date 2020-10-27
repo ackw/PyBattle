@@ -2,14 +2,33 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
+using Debug = UnityEngine.Debug;
+using System.Globalization;
+using UnityEngine.Networking;
+using UnityEngine.UI;
 
-public class QuestionController : MonoBehaviour {
+public class QuestionController : MonoBehaviour
+{
 
     public static QuestionController instance;
 
     private List<Question> _questions;
     private List<List<Answer>> _answers;
     private int questionIndex = 0;
+    [Serializable]
+    public struct Questionbank
+    {
+
+        public string question;
+        public string op1;
+        public string op2;
+        public string op3;
+        public string op4;
+        public string correct_ans;
+
+    }
+    public Questionbank[] allResults;
 
     public int QuestionIndex
     {
@@ -30,15 +49,48 @@ public class QuestionController : MonoBehaviour {
             instance = this;
     }
 
-    public void LoadQuestions()
+    public IEnumerator LoadQuestions()
     {
         _questions = new List<Question>();
         _answers = new List<List<Answer>>();
-        
 
         List<Answer> answersList = new List<Answer>();
 
-        _questions.Add(new Question(2, "Quel est la fonction Java qui permet de convertir une chaine de caractere en entier?", false));
+
+        using (UnityWebRequest www = UnityWebRequest.Get("http://172.21.148.163:3381/pvpRetrieveQuestion.php"))
+        {
+            yield return www.SendWebRequest();
+
+            if (www.isNetworkError)
+            {
+                Debug.Log(www.error);
+            }
+            else
+            {
+
+                // Successful and returns the php results as a JSON Array
+                string results = www.downloadHandler.text;
+                allResults = JsonHelper.GetArray<Questionbank>(results);
+                for (int i = 0; i < 6; i++)
+                {
+                    //need to randomise the question from whole of questionbank
+                    print(allResults[i].op1);
+                    _questions.Add(new Question(i, allResults[i].question, false));
+                    answersList = new List<Answer>();
+                    answersList.Add(new Answer(1, allResults[i].op1, false));
+                    answersList.Add(new Answer(2, allResults[i].op2, false));
+                    answersList.Add(new Answer(3, allResults[i].op3, true));
+                    answersList.Add(new Answer(4, allResults[i].op4, false));
+                    _answers.Add(answersList);
+
+
+                }
+
+
+            }
+        }
+
+        /*_questions.Add(new Question(2, "Quel est la fonction Java qui permet de convertir une chaine de caractere en entier?", false));
         answersList.Add(new Answer(1, "int.parse()", false));
         answersList.Add(new Answer(2, "int.parseInt()", false));
         answersList.Add(new Answer(3, "Integer.parseInt()", true));
@@ -152,7 +204,9 @@ public class QuestionController : MonoBehaviour {
         answersList.Add(new Answer(3, "4", false));
         answersList.Add(new Answer(2, "7", true));
         answersList.Add(new Answer(4, "6", false));
-        _answers.Add(answersList);
+        _answers.Add(answersList);*/
+
+
 
 
     }
@@ -163,14 +217,14 @@ public class QuestionController : MonoBehaviour {
         GameUIController.instance.EnableAnswers(false);
 
         QuestionIndex++;
-        
+
     }
     public void Next(int index)
     {
         GameUIController.instance.ShowQuestion(_questions[index], _answers[index]);
         GameUIController.instance.EnableBuzzer(true);
         GameUIController.instance.EnableAnswers(false);
-        
+
 
     }
 }
