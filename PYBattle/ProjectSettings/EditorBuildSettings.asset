@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 6cd8d94cf88b3bc4b9afda96889c2940
+  - enabled: 1
+    path: Assets/Scenes/GameScene.unity
+    guid: 514bcc83ad1577a44a9fb46339088c22
+  - enabled: 1
+    path: Assets/Scenes/EndPVP.unity
+    guid: 680c89ebda8c3f54195e18b663465f93
+  - enabled: 1
     path: Assets/Creator Kit - RPG/Scenes/GameSelection.unity
     guid: e6b3662f0c6b342a18fcf86003317a1a
   - enabled: 1
@@ -20,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Creator Kit - RPG/Scenes/Leaderboard.unity
     guid: b0eeb215490c243d1a6bd0548b4c76e8
+  - enabled: 1
+    path: Assets/Creator Kit - RPG/Scenes/Dialog.unity
+    guid: 4e34bd2aa85c5874cadb25f4e55819fd
   m_configObjects: {}

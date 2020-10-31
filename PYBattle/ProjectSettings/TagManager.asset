@@ -6,6 +6,8 @@ TagManager:
   tags:
   - player
   - Monster1
+  - Trueanswer
+  - Bandits
   layers:
   - Default
   - TransparentFX

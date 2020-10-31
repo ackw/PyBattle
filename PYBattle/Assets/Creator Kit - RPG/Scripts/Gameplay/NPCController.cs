@@ -10,6 +10,7 @@ namespace RPGM.Gameplay
     public class NPCController : MonoBehaviour
     {
         public ConversationScript[] conversations;
+        public GameObject sprite;
 
         Quest activeQuest = null;
 
@@ -33,6 +34,15 @@ namespace RPGM.Gameplay
                 ev.gameObject = gameObject;
                 ev.conversationItemKey = "";
             }
+
+            removeSprite();
+        }
+
+        public void removeSprite()
+        {
+            sprite.GetComponent<SpriteRenderer>().enabled = false;
+            sprite.GetComponent<BoxCollider2D>().enabled = false;
+            //return;
         }
 
         public void CompleteQuest(Quest q)
