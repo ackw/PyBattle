@@ -28,11 +28,11 @@ namespace RPGM.Events
             else
             {
                 ci = conversation.Get(conversationItemKey);
-                if (ci.id == "1.1")
+                /*if (ci.id == "1.1")
                 {
                     SceneManager.LoadScene("World");
-                }
-                }
+                }*/
+            }
 
 
             //if this item contains an unstarted quest, schedule a start quest event for the quest.

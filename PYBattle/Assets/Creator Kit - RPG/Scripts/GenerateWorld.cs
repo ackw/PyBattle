@@ -46,7 +46,7 @@ public class GenerateWorld : MonoBehaviour
             caveList[i].GetComponent<BoxCollider2D>().enabled = false;
         }
 
-        int num = 3; //replace with database no. of worlds
+        int num = 5; //replace with database no. of worlds
 
         for (int i = 0; i < num; i++)
         {
