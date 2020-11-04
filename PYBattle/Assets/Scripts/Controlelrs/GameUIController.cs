@@ -159,10 +159,11 @@ public class GameUIController : MonoBehaviour {
         {
             case 1:
                 scorePlayer1.text = score.ToString();
+                print("PLAYER 1: "+scorePlayer1.text);
                 break;
             case 2:
                 scorePlayer2.text = score.ToString();
-
+                print("PLAYER 2: " + scorePlayer2.text);
                 break;
             case 3:
                 scorePlayer3.text = score.ToString();
@@ -196,7 +197,7 @@ public class GameUIController : MonoBehaviour {
     }
         
     public int GetPlayerNumber(string playerName)
-    {
+    {        
         if (player1.transform.GetChild(0).GetComponent<Text>().text == playerName)
             return 1;
         if (player2.transform.GetChild(0).GetComponent<Text>().text == playerName)

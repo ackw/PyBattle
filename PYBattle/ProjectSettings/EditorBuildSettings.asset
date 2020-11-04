@@ -14,22 +14,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EndPVP.unity
     guid: 680c89ebda8c3f54195e18b663465f93
-  - enabled: 1
+  - enabled: 0
     path: Assets/Creator Kit - RPG/Scenes/GameSelection.unity
     guid: e6b3662f0c6b342a18fcf86003317a1a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Creator Kit - RPG/Scenes/WorldSelection.unity
     guid: 35cffb18f7a1243348898eb88f4ede0b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Creator Kit - RPG/Scenes/World.unity
     guid: f27c3c6c55728814a9ee22964324cbde
-  - enabled: 1
+  - enabled: 0
     path: Assets/Creator Kit - RPG/Scenes/CharacterSelector.unity
     guid: 8c6897a589335a843aabdbd21ebeeee0
-  - enabled: 1
+  - enabled: 0
     path: Assets/Creator Kit - RPG/Scenes/Leaderboard.unity
     guid: b0eeb215490c243d1a6bd0548b4c76e8
-  - enabled: 1
+  - enabled: 0
     path: Assets/Creator Kit - RPG/Scenes/Dialog.unity
     guid: 4e34bd2aa85c5874cadb25f4e55819fd
   m_configObjects: {}
