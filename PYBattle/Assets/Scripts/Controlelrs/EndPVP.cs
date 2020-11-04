@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class EndPVP : MonoBehaviour
 {
@@ -15,6 +17,7 @@ public class EndPVP : MonoBehaviour
     private string player2_name;
     public Button twittershare;
     public Button facebookshare;
+    public Button endPVP;
 
     // Use this for initialization
     void Start()
@@ -52,6 +55,10 @@ public class EndPVP : MonoBehaviour
         facebookshare.onClick.AddListener( delegate {
             sharePostOnFacebook(textToDisplay, result);
         } );
+
+        endPVP.onClick.AddListener(delegate {
+            SceneManager.LoadScene("GameSelection");
+        });
     }
 
         

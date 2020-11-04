@@ -60,7 +60,7 @@ public class PhotonRoom : MonoBehaviourPunCallbacks
         base.OnEnable();
         PhotonNetwork.AddCallbackTarget(this);
         SceneManager.sceneLoaded += OnSceneLoaded;
-
+        //SceneManager.LoadScene("GameScene");
     }
 
     public override void OnJoinedRoom()

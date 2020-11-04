@@ -2472,7 +2472,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxPlayers: 2
-  GameScene: 1
+  GameScene: 7
   AnswerTime: 4
   AnswerPoints: 5
   QuestionTime: 10
