@@ -13,6 +13,11 @@ public class EndPVP : MonoBehaviour
     private int player2_score;
     private string player1_name;
     private string player2_name;
+<<<<<<< Updated upstream
+=======
+    public Button twittershare;
+    public Button facebookshare;
+>>>>>>> Stashed changes
 
     // Use this for initialization
     void Start()
@@ -24,7 +29,53 @@ public class EndPVP : MonoBehaviour
 
         player1Score_text.text = "Score: " + player1_score.ToString();
         player2Score_text.text = "Score: " + player2_score.ToString();
+<<<<<<< Updated upstream
         player1Name_text.text = "Name: " + player1_name;
         player2Name_text.text = "Name: " + player2_name;
     }
+=======
+        player1Name_text.text = "Name: " + player1_name.ToString();
+        player2Name_text.text = "Name: " + player2_name.ToString();
+
+
+        /* TWITTER VARIABLES*/
+
+        //Twitter Share Link
+        string TWITTER_ADDRESS = "http://twitter.com/intent/tweet";
+
+        //Language
+        string TWEET_LANGUAGE = "en";
+
+        //This is the text which you want to show
+        string textToDisplay="Hey Guys! Check out my PyBattle PvP Challenge Result: \n";
+
+        string result= "Name: " + player1_name.ToString() + ". " + "Score: " + player1_score.ToString() + ". \n" + "Name: " + player2_name.ToString() +". "+ "Score: " + player2_score.ToString() + ". ";
+
+        /*END OF TWITTER VARIABLES*/
+
+        twittershare.onClick.AddListener( delegate {
+            shareScoreOnTwitter(TWITTER_ADDRESS, TWEET_LANGUAGE, textToDisplay, result);
+        } );
+
+        facebookshare.onClick.AddListener( delegate {
+            sharePostOnFacebook(textToDisplay, result);
+        } );
+    }
+
+        
+
+    
+    // Twitter Share Button	
+        private void shareScoreOnTwitter (string TWITTER_ADDRESS, string TWEET_LANGUAGE, string textToDisplay, string result) 
+        {
+            Application.OpenURL (TWITTER_ADDRESS + "?text=" + WWW.EscapeURL(textToDisplay) + WWW.EscapeURL(result) + "&amp;lang=" + WWW.EscapeURL(TWEET_LANGUAGE));
+        }
+    // share on facebook
+        public void sharePostOnFacebook(string textToDisplay, string result)
+        {
+    
+            Application.OpenURL("https://www.facebook.com/sharer/sharer.php?u=google.com&quote=" + WWW.EscapeURL(textToDisplay) + WWW.EscapeURL(result));
+        }
+    
+>>>>>>> Stashed changes
 }

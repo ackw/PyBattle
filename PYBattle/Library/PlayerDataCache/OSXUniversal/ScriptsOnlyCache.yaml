@@ -1902,7 +1902,11 @@ ScriptsOnlyBuild:
     className: SplineWalker
   - hash:
       serializedVersion: 2
+<<<<<<< Updated upstream
       Hash: 87707173774181069b0a22b634e395d4
+=======
+      Hash: 19349e2e2d519219f1b27e6223e1ba94
+>>>>>>> Stashed changes
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EndPVP
