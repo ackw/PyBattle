@@ -14,6 +14,7 @@ public class EndPVP : MonoBehaviour
     private string player1_name;
     private string player2_name;
     public Button twittershare;
+    public Button facebookshare;
 
     // Use this for initialization
     void Start()
@@ -47,6 +48,10 @@ public class EndPVP : MonoBehaviour
         twittershare.onClick.AddListener( delegate {
             shareScoreOnTwitter(TWITTER_ADDRESS, TWEET_LANGUAGE, textToDisplay, result);
         } );
+
+        facebookshare.onClick.AddListener( delegate {
+            sharePostOnFacebook(textToDisplay, result);
+        } );
     }
 
         
@@ -56,6 +61,12 @@ public class EndPVP : MonoBehaviour
         private void shareScoreOnTwitter (string TWITTER_ADDRESS, string TWEET_LANGUAGE, string textToDisplay, string result) 
         {
             Application.OpenURL (TWITTER_ADDRESS + "?text=" + WWW.EscapeURL(textToDisplay) + WWW.EscapeURL(result) + "&amp;lang=" + WWW.EscapeURL(TWEET_LANGUAGE));
+        }
+    // share on facebook
+        public void sharePostOnFacebook(string textToDisplay, string result)
+        {
+    
+            Application.OpenURL("https://www.facebook.com/sharer/sharer.php?u=google.com&quote=" + WWW.EscapeURL(textToDisplay) + WWW.EscapeURL(result));
         }
     
 }
