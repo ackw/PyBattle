@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Networking;
+using System;
+using TMPro;
 
 public class WorldController : MonoBehaviour
 {
@@ -9,36 +12,28 @@ public class WorldController : MonoBehaviour
 
     private string worldName;
 
-
     void OnTriggerEnter2D(Collider2D other)
     {
+        print("collision detected");
         if (other.CompareTag("player"))
         {
             GetSection();
+            //SceneManager.LoadScene("World");
         }
-        /*if (other.CompareTag("player"))
-        {
-            if (gameObject.name == "Cave3")
-            {
-                SceneManager.LoadScene("World");
-            }
-        }*/ //sample on how to use gameObject.name
-        
     }
 
     private void GetSection()
     {
-        worldName = gameObject.name;
-        //pass worldName into database to retrieve section, levels data
-
-        //dummy data: (pretend that data has been obtained)
-        int sectionNum = 2;
+        print("get section");
         
-        //pass the world/section info back into database
-        //when re-entering the worlds, check for the section level to enter
+        worldName = gameObject.name;
 
+        PlayerPrefs.SetString("worldName", worldName);
         SceneManager.LoadScene("World");
-
     }
+
+    //Generate world codes-------------------------
+
+    
 
 }

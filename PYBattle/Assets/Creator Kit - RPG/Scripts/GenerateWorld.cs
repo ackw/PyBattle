@@ -1,6 +1,10 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.Networking;
+using TMPro;
 
 public class GenerateWorld : MonoBehaviour
 {
@@ -16,12 +20,27 @@ public class GenerateWorld : MonoBehaviour
     public GameObject Text4;
     public GameObject Text5;
 
+    int num = 0;
+
     public List<GameObject> caveList;
     public List<GameObject> textList;
     public List<SpriteRenderer> caveRenderList;
     public List<MeshRenderer> textRenderList;
-    
+
+    [Serializable]
+    public struct WorldData
+    {
+        public string world_name;
+    }
+
+    WorldData[] allResults;
+
     void Awake()
+    {
+        StartCoroutine(GetData());
+    }
+
+    void DrawUI()
     {
         caveList.Add(Cave1);
         caveList.Add(Cave2);
@@ -44,18 +63,44 @@ public class GenerateWorld : MonoBehaviour
             textRenderList[i].enabled = false;
 
             caveList[i].GetComponent<BoxCollider2D>().enabled = false;
+
+
         }
 
-        int num = 5; //replace with database no. of worlds
+        int caveNum = num; //replace with database no. of worlds
+        print(caveNum);
 
-        for (int i = 0; i < num; i++)
+        for (int i = 0; i < caveNum; i++)
         {
             caveRenderList[i].enabled = true;
             textRenderList[i].enabled = true;
             caveList[i].GetComponent<BoxCollider2D>().enabled = true;
+            textList[i].GetComponent<TextMeshPro>().text = allResults[i].world_name;
         }
-
     }
 
+    IEnumerator GetData()
+    {
+        using (UnityWebRequest www = UnityWebRequest.Get("http://172.21.148.163:3381/loadworld.php"))
+        {
+            // Request and wait for the desired page.
+            yield return www.SendWebRequest();
 
+            if (www.isNetworkError)
+            {
+                Debug.Log(www.error);
+            }
+            else
+            {
+                // Successful and returns the php results as a JSON Array
+                string results = www.downloadHandler.text;
+                print(results);
+                allResults = JsonHelper.GetArray<WorldData>(results);
+                print(allResults.Length);
+                num = allResults.Length;
+            }
+
+            DrawUI();
+        }
+    }
 }
