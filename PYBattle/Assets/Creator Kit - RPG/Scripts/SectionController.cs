@@ -8,9 +8,11 @@ using TMPro;
 
 public class SectionController : MonoBehaviour
 {
-    public GameObject SectionText;
-
     private string sectionName;
+
+    public TextMeshPro SectionText;
+
+    int num = 0;
 
     [Serializable]
     public struct WorldProgress
@@ -23,8 +25,13 @@ public class SectionController : MonoBehaviour
     void Start()
     {
         StartCoroutine(GetData());
+    }
 
-        for (int i = 0; i < allResults.Length; i++)
+    void Sections()
+    {
+        print("printing section names");
+
+        for (int i = 0; i < num; i++)
         {
             if (allResults[i].world == PlayerPrefs.GetString("worldName"))
             {
@@ -32,7 +39,8 @@ public class SectionController : MonoBehaviour
             }
         }
 
-        SectionText.GetComponent<TextMeshPro>().text = sectionName;
+        SectionText.text = sectionName;
+
     }
 
     IEnumerator GetData()
@@ -51,6 +59,7 @@ public class SectionController : MonoBehaviour
                 // Successful and returns the php results as a JSON Array
 
                 string results = www.downloadHandler.text;
+                print("This is the results " + results);
                 allResults = JsonHelper.GetArray<WorldProgress>(results);
 
                 for (int i = 0; i < allResults.Length; i++)
@@ -58,7 +67,9 @@ public class SectionController : MonoBehaviour
                     print(allResults[i].world + " section is " + allResults[i].section);
                 }
 
-                //DrawUI();
+                num = allResults.Length;
+
+                Sections();
             }
         }
     }

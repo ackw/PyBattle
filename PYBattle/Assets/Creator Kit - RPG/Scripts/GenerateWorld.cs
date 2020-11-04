@@ -75,7 +75,10 @@ public class GenerateWorld : MonoBehaviour
             caveRenderList[i].enabled = true;
             textRenderList[i].enabled = true;
             caveList[i].GetComponent<BoxCollider2D>().enabled = true;
+
             textList[i].GetComponent<TextMeshPro>().text = allResults[i].world_name;
+
+            caveList[i].name = allResults[i].world_name;
         }
     }
 

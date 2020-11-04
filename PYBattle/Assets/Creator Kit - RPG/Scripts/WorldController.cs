@@ -8,8 +8,6 @@ using TMPro;
 
 public class WorldController : MonoBehaviour
 {
-    //private readonly string World;
-
     private string worldName;
 
     void OnTriggerEnter2D(Collider2D other)
@@ -18,7 +16,6 @@ public class WorldController : MonoBehaviour
         if (other.CompareTag("player"))
         {
             GetSection();
-            //SceneManager.LoadScene("World");
         }
     }
 
@@ -27,13 +24,11 @@ public class WorldController : MonoBehaviour
         print("get section");
         
         worldName = gameObject.name;
-
+        
         PlayerPrefs.SetString("worldName", worldName);
+        print("the world name is: " + PlayerPrefs.GetString("worldName"));
+        
         SceneManager.LoadScene("World");
     }
-
-    //Generate world codes-------------------------
-
-    
 
 }
