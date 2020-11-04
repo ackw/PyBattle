@@ -6,30 +6,33 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Creator Kit - RPG/Scenes/GameSelection.unity
+    path: Assets/Scenes/Story Mode/GameSelection.unity
     guid: e6b3662f0c6b342a18fcf86003317a1a
   - enabled: 1
-    path: Assets/Creator Kit - RPG/Scenes/Leaderboard.unity
+    path: Assets/Scenes/Story Mode/Leaderboard.unity
     guid: b0eeb215490c243d1a6bd0548b4c76e8
   - enabled: 1
-    path: Assets/Creator Kit - RPG/Scenes/WorldSelection.unity
+    path: Assets/Scenes/Story Mode/WorldSelection.unity
     guid: 35cffb18f7a1243348898eb88f4ede0b
   - enabled: 1
-    path: Assets/Creator Kit - RPG/Scenes/Section.unity
+    path: Assets/Scenes/Story Mode/Section.unity
     guid: f27c3c6c55728814a9ee22964324cbde
   - enabled: 1
-    path: Assets/Creator Kit - RPG/Scenes/CharacterSelector.unity
+    path: Assets/Scenes/Story Mode/CharacterSelector.unity
     guid: 8c6897a589335a843aabdbd21ebeeee0
   - enabled: 1
-    path: Assets/Creator Kit - RPG/Scenes/Dialog.unity
+    path: Assets/Scenes/Story Mode/Dialog.unity
     guid: 4e34bd2aa85c5874cadb25f4e55819fd
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
+    path: Assets/Scenes/PVP Mode/MainMenu.unity
     guid: 6cd8d94cf88b3bc4b9afda96889c2940
   - enabled: 1
-    path: Assets/Scenes/GameScene.unity
+    path: Assets/Scenes/PVP Mode/GameScene.unity
     guid: 514bcc83ad1577a44a9fb46339088c22
   - enabled: 1
-    path: Assets/Scenes/EndPVP.unity
+    path: Assets/Scenes/PVP Mode/EndPVP.unity
     guid: 680c89ebda8c3f54195e18b663465f93
+  - enabled: 1
+    path: Assets/Scenes/LoginPage.unity
+    guid: 9b8aade03164745e6bcca9eb790db8dd
   m_configObjects: {}
