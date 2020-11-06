@@ -7,6 +7,8 @@ using UnityEngine.UI;
 
 public class Dialog : MonoBehaviour
 {
+
+    static int score;
     [Serializable]
     public struct Questions
     {
@@ -43,6 +45,10 @@ public class Dialog : MonoBehaviour
                 questionIndex += 1;
                 PlayerPrefs.SetInt("qIndex", questionIndex);
                 SceneManager.UnloadSceneAsync("Dialog");
+                Time.timeScale = 1f;
+                score += 1;
+                print(score);
+
             }
             else
             {
@@ -59,6 +65,10 @@ public class Dialog : MonoBehaviour
                 questionIndex += 1;
                 PlayerPrefs.SetInt("qIndex", questionIndex);
                 SceneManager.UnloadSceneAsync("Dialog");
+                Time.timeScale = 1f;
+                score += 1;
+                print(score);
+
             }
             else
             {
@@ -76,6 +86,10 @@ public class Dialog : MonoBehaviour
                 questionIndex += 1;
                 PlayerPrefs.SetInt("qIndex", questionIndex);
                 SceneManager.UnloadSceneAsync("Dialog");
+                Time.timeScale = 1f;
+                score += 1;
+                print(score);
+
             }
             else
             {
@@ -93,6 +107,10 @@ public class Dialog : MonoBehaviour
                 questionIndex += 1;
                 PlayerPrefs.SetInt("qIndex", questionIndex);
                 SceneManager.UnloadSceneAsync("Dialog");
+                Time.timeScale = 1f;
+                score += 1;
+                print(score);
+
             }
             else
             {
@@ -112,6 +130,11 @@ public class Dialog : MonoBehaviour
         GameObject.Find("C4").GetComponentInChildren<Text>().text = allResults[questionIndex].op4;
 
         
+    }
+
+    public int getScores()
+    {
+        return score;
     }
 
     IEnumerator GetData()
