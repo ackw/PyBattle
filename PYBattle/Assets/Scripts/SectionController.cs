@@ -24,20 +24,20 @@ public class SectionController : MonoBehaviour
 
     void Start()
     {
+        print("starting section controller");
         StartCoroutine(GetData());
     }
 
     void Sections()
     {
-        print("printing section names");
+        print(PlayerPrefs.GetString("worldName"));
+        print(allResults[0].world);
 
-        for (int i = 0; i < num; i++)
+        if (PlayerPrefs.GetString("worldName") == allResults[0].world) //changing text to section name
         {
-            if (allResults[i].world == PlayerPrefs.GetString("worldName"))
-            {
-                sectionName = allResults[i].section;
-            }
-        }
+            sectionName = allResults[0].section;
+            PlayerPrefs.SetString("sectionName", sectionName);
+        } //if enter a world that is not player's current world then can't generate section?
 
         SectionText.text = sectionName;
 
@@ -62,12 +62,8 @@ public class SectionController : MonoBehaviour
                 print("This is the results " + results);
                 allResults = JsonHelper.GetArray<WorldProgress>(results);
 
-                for (int i = 0; i < allResults.Length; i++)
-                {
-                    print(allResults[i].world + " section is " + allResults[i].section);
-                }
 
-                num = allResults.Length;
+                print(allResults[0].world + " section is " + allResults[0].section);
 
                 Sections();
             }

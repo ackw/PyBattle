@@ -20,28 +20,40 @@ public class GenerateWorld : MonoBehaviour
     public GameObject Text4;
     public GameObject Text5;
 
-    int num = 0;
+    public Sprite cavelock;
+
+    int numWorlds = 0;
+    int numCompleted = 0;
 
     public List<GameObject> caveList;
     public List<GameObject> textList;
     public List<SpriteRenderer> caveRenderList;
     public List<MeshRenderer> textRenderList;
+    private string[] world_name;
 
     [Serializable]
     public struct WorldData
     {
-        public string world_name;
+        public int Total_No_Of_World;
+        public string List_Of_World;
+        public int No_Of_Completed_World;
+        public string List_Of_Completed_World;
+        public int No_Of_Uncompleted_World;
+        public string List_Of_Uncompleted_World;
     }
-
     WorldData[] allResults;
 
     void Awake()
     {
+        print("start");
         StartCoroutine(GetData());
+        //DrawUI();
     }
 
     void DrawUI()
     {
+        print("generate world - draw UI");
+        
         caveList.Add(Cave1);
         caveList.Add(Cave2);
         caveList.Add(Cave3);
@@ -63,28 +75,43 @@ public class GenerateWorld : MonoBehaviour
             textRenderList[i].enabled = false;
 
             caveList[i].GetComponent<BoxCollider2D>().enabled = false;
-
-
         }
 
-        int caveNum = num; //replace with database no. of worlds
-        print(caveNum);
+        //dummy to test
+        /*numWorlds = 5;
+        numCompleted = 2;
+        string worlds = "one,two,three,four,five";
+        world_name = worlds.Split(char.Parse(","));*/
 
-        for (int i = 0; i < caveNum; i++)
+        print("numWorlds = " + numWorlds); //database no. of worlds
+
+        for (int i = 0; i < numWorlds; i++)
         {
             caveRenderList[i].enabled = true;
             textRenderList[i].enabled = true;
             caveList[i].GetComponent<BoxCollider2D>().enabled = true;
 
-            textList[i].GetComponent<TextMeshPro>().text = allResults[i].world_name;
+            textList[i].GetComponent<TextMeshPro>().text = world_name[i];
+            caveList[i].name = world_name[i];
+        }
 
-            caveList[i].name = allResults[i].world_name;
+        for (int i=0; i < numWorlds; i++) //add locks, disable collider for uncompleted caves
+        {
+            if (i != numCompleted) //currently disable collider for all except current (or will have issues generating section name)
+            {
+                caveList[i].GetComponent<BoxCollider2D>().enabled = false;
+            }
+            if (i > numCompleted)
+            {
+                caveList[i].GetComponent<SpriteRenderer>().sprite = cavelock;
+            }
         }
     }
 
     IEnumerator GetData()
     {
-        using (UnityWebRequest www = UnityWebRequest.Get("http://172.21.148.163:3381/loadworld.php"))
+        print("trying to get data");
+        using (UnityWebRequest www = UnityWebRequest.Get("http://172.21.148.163:3381/loadplayerworld.php"))
         {
             // Request and wait for the desired page.
             yield return www.SendWebRequest();
@@ -99,8 +126,19 @@ public class GenerateWorld : MonoBehaviour
                 string results = www.downloadHandler.text;
                 print(results);
                 allResults = JsonHelper.GetArray<WorldData>(results);
-                print(allResults.Length);
-                num = allResults.Length;
+
+                print("data obtained");
+
+                //total number of worlds
+                numWorlds = allResults[0].Total_No_Of_World;
+                //number of completed worlds
+                numCompleted = allResults[0].No_Of_Completed_World;
+                //generate list of world names
+                //world_name = allResults[0].List_Of_World.Split(char.Parse(","));
+                world_name = allResults[0].List_Of_World.Split(new string[] {", "}, StringSplitOptions.None);
+                print("printing world name");
+                print("world name:" + world_name[2]);
+
             }
 
             DrawUI();
