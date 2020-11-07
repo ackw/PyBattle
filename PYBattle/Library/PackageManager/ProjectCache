@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637402434144639418
-    m_Hash: 1878270528
+      ticks: 637402607081854177
+    m_Hash: 2714018688
   m_LockFileStatus:
     m_FilePath: C:/Users/user/Documents/GitHub/PyBattle/PYBattle/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637402434183921042
-    m_Hash: 1000538868
+      ticks: 637402607081984168
+    m_Hash: 2787360889
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:

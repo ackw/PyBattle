@@ -36,7 +36,6 @@ public class Dialog : MonoBehaviour
         
 
         StartCoroutine(GetData());
-
         in1.onClick.AddListener(() =>
         {
             if(string.Equals("1", allResults[questionIndex].correct_ans))
@@ -128,8 +127,6 @@ public class Dialog : MonoBehaviour
         GameObject.Find("C2").GetComponentInChildren<Text>().text = allResults[questionIndex].op2;
         GameObject.Find("C3").GetComponentInChildren<Text>().text = allResults[questionIndex].op3;
         GameObject.Find("C4").GetComponentInChildren<Text>().text = allResults[questionIndex].op4;
-
-        
     }
 
     public int getScores()
@@ -159,6 +156,8 @@ public class Dialog : MonoBehaviour
             }
         }
     }
+
+
 
     // Update is called once per frame
     void Update()
