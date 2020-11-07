@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine;
 
 public class SceneAdder : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class SceneAdder : MonoBehaviour
         if(other.CompareTag("player"))
         SceneManager.LoadScene(newlevel, LoadSceneMode.Additive);
         removeSprite();
+        Time.timeScale = 0.0f;
+
     }
     public void removeSprite()
     {
@@ -21,4 +24,6 @@ public class SceneAdder : MonoBehaviour
         Destroy(sprite);
         //return;
     }
+
+   
 }
