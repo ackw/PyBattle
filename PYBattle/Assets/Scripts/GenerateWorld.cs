@@ -30,6 +30,7 @@ public class GenerateWorld : MonoBehaviour
     public List<SpriteRenderer> caveRenderList;
     public List<MeshRenderer> textRenderList;
     private string[] world_name;
+    private string[] uncompleted_name;
 
     [Serializable]
     public struct WorldData
@@ -111,7 +112,13 @@ public class GenerateWorld : MonoBehaviour
     IEnumerator GetData()
     {
         print("trying to get data");
-        using (UnityWebRequest www = UnityWebRequest.Get("http://172.21.148.163:3381/loadplayerworld.php"))
+
+        string userID = PlayerPrefs.GetString("userKey");
+        userID = "zen"; //hardcode
+        WWWForm form = new WWWForm();
+        form.AddField("user", userID);
+
+        using (UnityWebRequest www = UnityWebRequest.Post("http://172.21.148.163:3381/loadplayerworld.php",form))
         {
             // Request and wait for the desired page.
             yield return www.SendWebRequest();
@@ -128,6 +135,7 @@ public class GenerateWorld : MonoBehaviour
                 allResults = JsonHelper.GetArray<WorldData>(results);
 
                 print("data obtained");
+                print(results);
 
                 //total number of worlds
                 numWorlds = allResults[0].Total_No_Of_World;
@@ -136,8 +144,9 @@ public class GenerateWorld : MonoBehaviour
                 //generate list of world names
                 //world_name = allResults[0].List_Of_World.Split(char.Parse(","));
                 world_name = allResults[0].List_Of_World.Split(new string[] {", "}, StringSplitOptions.None);
+                uncompleted_name = allResults[0].List_Of_Uncompleted_World.Split(new string[] { ", " }, StringSplitOptions.None);
                 print("printing world name");
-                print("world name:" + world_name[2]);
+                print("world name:" + uncompleted_name[0]);
 
             }
 

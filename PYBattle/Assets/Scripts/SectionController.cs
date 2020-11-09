@@ -30,8 +30,8 @@ public class SectionController : MonoBehaviour
 
     void Sections()
     {
-        print(PlayerPrefs.GetString("worldName"));
-        print(allResults[0].world);
+        print("compare this -> "+PlayerPrefs.GetString("worldName"));
+        print("with this -> "+allResults[0].world);
 
         if (PlayerPrefs.GetString("worldName") == allResults[0].world) //changing text to section name
         {
@@ -45,7 +45,12 @@ public class SectionController : MonoBehaviour
 
     IEnumerator GetData()
     {
-        using (UnityWebRequest www = UnityWebRequest.Get("http://172.21.148.163:3381/loadplayerprogress.php"))
+        string userID = PlayerPrefs.GetString("userKey");
+        userID = "zen"; //hardcode
+        WWWForm form = new WWWForm();
+        form.AddField("user", userID);
+
+        using (UnityWebRequest www = UnityWebRequest.Post("http://172.21.148.163:3381/loadplayerprogress.php", form))
         {
             // Request and wait for the desired page.
             yield return www.SendWebRequest();
