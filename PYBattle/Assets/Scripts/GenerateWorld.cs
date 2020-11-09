@@ -111,6 +111,12 @@ public class GenerateWorld : MonoBehaviour
     IEnumerator GetData()
     {
         print("trying to get data");
+
+        string userID = PlayerPrefs.GetString("userKey");
+
+        WWWForm form = new WWWForm();
+        form.AddField("user", userID);
+
         using (UnityWebRequest www = UnityWebRequest.Get("http://172.21.148.163:3381/loadplayerworld.php"))
         {
             // Request and wait for the desired page.
