@@ -8,6 +8,9 @@ TagManager:
   - Monster1
   - Trueanswer
   - Bandits
+  - 1
+  - 2
+  - 3
   layers:
   - Default
   - TransparentFX
