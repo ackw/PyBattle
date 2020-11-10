@@ -22,8 +22,8 @@ public class GenerateWorld : MonoBehaviour
 
     public Sprite cavelock;
 
-    int numWorlds = 0;
-    int numCompleted = 0;
+    private int numWorlds = 0;
+    private int numCompleted = 0;
 
     public List<GameObject> caveList;
     public List<GameObject> textList;

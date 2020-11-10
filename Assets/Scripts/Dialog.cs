@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
@@ -34,6 +35,7 @@ public class Dialog : MonoBehaviour
     public int level = 0;
     static int clearedQns = 0;
     static int qnscounter = 1;
+    static int isboss = 0;
 
     int getDifficulty(int score, int level)
     {
@@ -75,14 +77,24 @@ public class Dialog : MonoBehaviour
 
     void getQuestions(int level)
     {
-        for(int i = 0; i < 19; i++)
+        for(int i = 0; i < allResults.Length-2; i++)
         {
-            if(allResults[i].level == level)
+            if (level != 4)
             {
-                questionIndex = i+qnscounter-1+(getDifficulty(score, level)*3);
+                if (allResults[i].level == level)
+                {
+                    questionIndex = i + qnscounter - 1 + (getDifficulty(score, level) * 3);
+                   
+                    break;
+                }
+            }
+            else
+            {
+                questionIndex = allResults.Length-1;
 
                 break;
             }
+            
         }
     }
 
@@ -108,14 +120,23 @@ public class Dialog : MonoBehaviour
                 clickedcount = 0;
                 print(score);
 
-                if (qnscounter < 3)
+                if (level == 4)
                 {
-                    qnscounter++;
-                    SceneManager.LoadScene(newlevel, LoadSceneMode.Additive);
+                    //post
+                    StopCoroutine(GetData());
+                    StartCoroutine(PostScores());
                 }
                 else
                 {
-                    qnscounter=1;
+                    if (qnscounter < 3)
+                    {
+                        qnscounter++;
+                        SceneManager.LoadScene(newlevel, LoadSceneMode.Additive);
+                    }
+                    else
+                    {
+                        qnscounter = 1;
+                    }
                 }
 
             }
@@ -142,14 +163,24 @@ public class Dialog : MonoBehaviour
                 clickedcount = 0;
                 print(score);
 
-                if (qnscounter < 3)
+                if (level == 4)
                 {
-                    qnscounter++;
-                    SceneManager.LoadScene(newlevel, LoadSceneMode.Additive);
+                    //post
+                    StopCoroutine(GetData());
+
+                    StartCoroutine(PostScores());
                 }
                 else
                 {
-                    qnscounter = 1;
+                    if (qnscounter < 3)
+                    {
+                        qnscounter++;
+                        SceneManager.LoadScene(newlevel, LoadSceneMode.Additive);
+                    }
+                    else
+                    {
+                        qnscounter = 1;
+                    }
                 }
 
             }
@@ -178,14 +209,24 @@ public class Dialog : MonoBehaviour
                 clickedcount = 0;
                 print(score);
 
-                if (qnscounter < 3)
+                if (level == 4)
                 {
-                    qnscounter++;
-                    SceneManager.LoadScene(newlevel, LoadSceneMode.Additive);
+                    //post
+                    StopCoroutine(GetData());
+
+                    StartCoroutine(PostScores());
                 }
                 else
                 {
-                    qnscounter = 1;
+                    if (qnscounter < 3)
+                    {
+                        qnscounter++;
+                        SceneManager.LoadScene(newlevel, LoadSceneMode.Additive);
+                    }
+                    else
+                    {
+                        qnscounter = 1;
+                    }
                 }
 
             }
@@ -213,16 +254,26 @@ public class Dialog : MonoBehaviour
 
                 clickedcount = 0;
                 print(score);
-
-                if (qnscounter < 3)
+                if(level == 4)
                 {
-                    qnscounter++;
-                    SceneManager.LoadScene(newlevel, LoadSceneMode.Additive);
+                    //post
+                    StopCoroutine(GetData());
+
+                    StartCoroutine(PostScores());
                 }
                 else
                 {
-                    qnscounter = 1;
+                    if (qnscounter < 3)
+                    {
+                        qnscounter++;
+                        SceneManager.LoadScene(newlevel, LoadSceneMode.Additive);
+                    }
+                    else
+                    {
+                        qnscounter = 1;
+                    }
                 }
+
 
             }
             else
@@ -252,7 +303,10 @@ public class Dialog : MonoBehaviour
 
     IEnumerator GetData()
     {
-        using (UnityWebRequest www = UnityWebRequest.Get("http://172.21.148.163:3381/loadquestion.php"))
+        WWWForm form = new WWWForm();
+        form.AddField("section", PlayerPrefs.GetString("sectionName"));
+        form.AddField("worldName", PlayerPrefs.GetString("worldName"));
+        using (UnityWebRequest www = UnityWebRequest.Post("http://172.21.148.163:3381/loadquestion.php", form))
         {
             // Request and wait for the desired page.
             yield return www.SendWebRequest();
@@ -275,7 +329,8 @@ public class Dialog : MonoBehaviour
                 print("Section Name");
                 print(PlayerPrefs.GetString("sectionName"));
                 print("World Name");
-                print(PlayerPrefs.GetString("worldName"));
+                print("all result here ---------------------------");
+                print(results);
 
             }
         }
@@ -284,16 +339,18 @@ public class Dialog : MonoBehaviour
     IEnumerator PostScores()
     {
 
+        print("Enter here");
+
         string userID = PlayerPrefs.GetString("userKey");
-        userID = "zen"; //hardcode
-        WWWForm form = new WWWForm();
-        form.AddField("user", userID);
-        form.AddField("score", score);
-        form.AddField("section", PlayerPrefs.GetString("sectionName"));
-        form.AddField("worldName", PlayerPrefs.GetString("worldName"));
+        WWWForm scoreForm = new WWWForm();
+        scoreForm.AddField("user", userID);
+        scoreForm.AddField("score", score);
+        scoreForm.AddField("section", PlayerPrefs.GetString("sectionName"));
+        scoreForm
+            .AddField("worldName", PlayerPrefs.GetString("worldName"));
 
 
-        using (UnityWebRequest www = UnityWebRequest.Get("http://172.21.148.163:3381/loadquestion.php"))
+        using (UnityWebRequest www = UnityWebRequest.Post("http://172.21.148.163:3381/submitplayerscore.php", scoreForm))
         {
             // Request and wait for the desired page.
             yield return www.SendWebRequest();
@@ -306,13 +363,7 @@ public class Dialog : MonoBehaviour
             {
                 // Successful and returns the php results as a JSON Array
                 string results = www.downloadHandler.text;
-                allResults = JsonHelper.GetArray<Questions>(results);
-                level = PlayerPrefs.GetInt("level");
-                getQuestions(level);
-                clearedQns += 1;
-                print(level);
-                DrawUI();
-                print("this is q index" + questionIndex);
+                print(results);
             }
         }
     }

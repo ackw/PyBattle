@@ -12,7 +12,7 @@ public class SectionController : MonoBehaviour
 
     public TextMeshPro SectionText;
 
-    int num = 0;
+    private int num = 0;
 
     [Serializable]
     public struct WorldProgress
