@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Story Mode/Section.unity
+- path: Assets/Scenes/Story Mode/WorldSelection.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

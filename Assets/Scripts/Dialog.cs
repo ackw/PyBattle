@@ -33,9 +33,11 @@ public class Dialog : MonoBehaviour
     public int clickedcount = 0;
     public int level = 0;
     static int clearedQns = 0;
+    static int qnscounter = 1;
 
     int getDifficulty(int score, int level)
     {
+
         switch (this.level)
         {
             case 1:
@@ -48,7 +50,7 @@ public class Dialog : MonoBehaviour
                     return 0;
                 }
             case 2:
-                if (score > 8)
+                if (score > 10)
                 {
                     return 1;
                 }
@@ -57,7 +59,7 @@ public class Dialog : MonoBehaviour
                     return 0;
                 }
             case 3:
-                if (score > 15)
+                if (score > 18)
                 {
                     return 1;
                 }
@@ -77,7 +79,7 @@ public class Dialog : MonoBehaviour
         {
             if(allResults[i].level == level)
             {
-                questionIndex = i+clearedQns+(getDifficulty(score, level)*3);
+                questionIndex = i+qnscounter-1+(getDifficulty(score, level)*3);
 
                 break;
             }
@@ -89,7 +91,7 @@ public class Dialog : MonoBehaviour
     {
         questionIndex = 0;
         PlayerPrefs.SetInt("qIndex", 0);
-
+        int newlevel = 4;
         StartCoroutine(GetData());
         in1.onClick.AddListener(() =>
         {
@@ -100,8 +102,21 @@ public class Dialog : MonoBehaviour
                 PlayerPrefs.SetInt("qIndex", questionIndex);
                 SceneManager.UnloadSceneAsync("Dialog");
                 Time.timeScale = 1f;
-                score += 1;
+                if(clickedcount<4)
+                score += 3-clickedcount;
+
+                clickedcount = 0;
                 print(score);
+
+                if (qnscounter < 3)
+                {
+                    qnscounter++;
+                    SceneManager.LoadScene(newlevel, LoadSceneMode.Additive);
+                }
+                else
+                {
+                    qnscounter=1;
+                }
 
             }
             else
@@ -121,8 +136,21 @@ public class Dialog : MonoBehaviour
                 PlayerPrefs.SetInt("qIndex", questionIndex);
                 SceneManager.UnloadSceneAsync("Dialog");
                 Time.timeScale = 1f;
-                score += 1;
+                if (clickedcount < 4)
+                    score += 3 - clickedcount;
+
+                clickedcount = 0;
                 print(score);
+
+                if (qnscounter < 3)
+                {
+                    qnscounter++;
+                    SceneManager.LoadScene(newlevel, LoadSceneMode.Additive);
+                }
+                else
+                {
+                    qnscounter = 1;
+                }
 
             }
             else
@@ -144,8 +172,21 @@ public class Dialog : MonoBehaviour
                 PlayerPrefs.SetInt("qIndex", questionIndex);
                 SceneManager.UnloadSceneAsync("Dialog");
                 Time.timeScale = 1f;
-                score += 1;
+                if (clickedcount < 4)
+                    score += 3 - clickedcount;
+
+                clickedcount = 0;
                 print(score);
+
+                if (qnscounter < 3)
+                {
+                    qnscounter++;
+                    SceneManager.LoadScene(newlevel, LoadSceneMode.Additive);
+                }
+                else
+                {
+                    qnscounter = 1;
+                }
 
             }
             else
@@ -167,8 +208,21 @@ public class Dialog : MonoBehaviour
                 PlayerPrefs.SetInt("qIndex", questionIndex);
                 SceneManager.UnloadSceneAsync("Dialog");
                 Time.timeScale = 1f;
-                score += 1;
+                if (clickedcount < 4)
+                    score += 3 - clickedcount;
+
+                clickedcount = 0;
                 print(score);
+
+                if (qnscounter < 3)
+                {
+                    qnscounter++;
+                    SceneManager.LoadScene(newlevel, LoadSceneMode.Additive);
+                }
+                else
+                {
+                    qnscounter = 1;
+                }
 
             }
             else
@@ -196,12 +250,6 @@ public class Dialog : MonoBehaviour
         return score;
     }
 
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("level 1"))
-            print("Level 1");
-    }
-
     IEnumerator GetData()
     {
         using (UnityWebRequest www = UnityWebRequest.Get("http://172.21.148.163:3381/loadquestion.php"))
@@ -218,17 +266,57 @@ public class Dialog : MonoBehaviour
                 // Successful and returns the php results as a JSON Array
                 string results = www.downloadHandler.text;
                 allResults = JsonHelper.GetArray<Questions>(results);
-                getQuestions(2);
-                clearedQns += 1;
                 level = PlayerPrefs.GetInt("level");
+                getQuestions(level);
+                clearedQns += 1;
                 print(level);
                 DrawUI();
-                print(questionIndex);
+                print("this is q index" + questionIndex);
+                print("Section Name");
+                print(PlayerPrefs.GetString("sectionName"));
+                print("World Name");
+                print(PlayerPrefs.GetString("worldName"));
+
             }
         }
     }
 
-   
+    IEnumerator PostScores()
+    {
+
+        string userID = PlayerPrefs.GetString("userKey");
+        userID = "zen"; //hardcode
+        WWWForm form = new WWWForm();
+        form.AddField("user", userID);
+        form.AddField("score", score);
+        form.AddField("section", PlayerPrefs.GetString("sectionName"));
+        form.AddField("worldName", PlayerPrefs.GetString("worldName"));
+
+
+        using (UnityWebRequest www = UnityWebRequest.Get("http://172.21.148.163:3381/loadquestion.php"))
+        {
+            // Request and wait for the desired page.
+            yield return www.SendWebRequest();
+
+            if (www.isNetworkError)
+            {
+                Debug.Log(www.error);
+            }
+            else
+            {
+                // Successful and returns the php results as a JSON Array
+                string results = www.downloadHandler.text;
+                allResults = JsonHelper.GetArray<Questions>(results);
+                level = PlayerPrefs.GetInt("level");
+                getQuestions(level);
+                clearedQns += 1;
+                print(level);
+                DrawUI();
+                print("this is q index" + questionIndex);
+            }
+        }
+    }
+
 
     // Update is called once per frame
     void Update()

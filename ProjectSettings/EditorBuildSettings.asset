@@ -8,9 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Story Mode/GameSelection.unity
     guid: e6b3662f0c6b342a18fcf86003317a1a
-  - enabled: 1
-    path: Assets/Scenes/Story Mode/Leaderboard.unity
-    guid: b0eeb215490c243d1a6bd0548b4c76e8
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Story Mode/WorldSelection.unity
     guid: 35cffb18f7a1243348898eb88f4ede0b
